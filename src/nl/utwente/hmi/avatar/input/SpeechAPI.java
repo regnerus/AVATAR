@@ -11,12 +11,8 @@ import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
-
-import ee.ioc.phon.netspeechapi.duplex.DuplexRecognitionSession;
-import ee.ioc.phon.netspeechapi.duplex.RecognitionEvent;
-import ee.ioc.phon.netspeechapi.duplex.RecognitionEventListener;
-import ee.ioc.phon.netspeechapi.duplex.WsDuplexRecognitionSession;
 
 import javax.swing.*;
 
@@ -97,11 +93,8 @@ public class SpeechAPI
     TargetDataLine targetDataLine;
     static AudioInputStream audioInputStream;
 
-    public static final String DEFAULT_WS_URL = "ws://nlspraak.ewi.utwente.nl:8889/client/ws/speech";
-    public static final String DEFAULT_WS_STATUS_URL = "ws://nlspraak.ewi.utwente.nl:8889/client/ws/status";
-    // public static final String DEFAULT_WS_URL = "ws://nlspraak.ewi.utwente.nl:8890/client/ws/speech";
-    // public static final String DEFAULT_WS_STATUS_URL = "ws://nlspraak.ewi.utwente.nl:8890/client/ws/status";
-
+    static String wsUrl = "ws://nlspraak.ewi.utwente.nl:8889/client/ws/speech";
+    static String wsStatusURL = "ws://nlspraak.ewi.utwente.nl:8889/client/ws/status";
 
     static class RecognitionEventAccumulator implements RecognitionEventListener, WorkerCountInterface
     {
@@ -188,12 +181,20 @@ public class SpeechAPI
         }
     }
 
-    public SpeechAPI(RecognitionEventListener rel)
-    {
+    /**
+     * Start a new game with players and an empty bag.
+     */
+    public SpeechAPI(String language, RecognitionEventListener rel) {
+
+        if(language == "EN") {
+            wsUrl = "ws://nlspraak.ewi.utwente.nl:8890/client/ws/speech";
+            wsStatusURL = "ws://nlspraak.ewi.utwente.nl:8890/client/ws/status";
+        }
+
         try
         {
             RecognitionEventAccumulator statusEventAccumulator = new RecognitionEventAccumulator();
-            URI statusUri = new URI(DEFAULT_WS_STATUS_URL);
+            URI statusUri = new URI(wsStatusURL);
             WorkerCountClient status_session = new WorkerCountClient(statusUri, statusEventAccumulator);
             status_session.connect();
         }
@@ -206,7 +207,7 @@ public class SpeechAPI
         try
         {
             //RecognitionEventAccumulator eventAccumulator = new RecognitionEventAccumulator();
-            session = new WsDuplexRecognitionSession(DEFAULT_WS_URL);
+            session = new WsDuplexRecognitionSession(wsUrl);
             //session.addRecognitionEventListener(eventAccumulator);
             if (rel != null)
             {
