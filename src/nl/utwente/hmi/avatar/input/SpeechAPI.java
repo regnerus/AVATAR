@@ -116,7 +116,7 @@ public class SpeechAPI extends Input
         public void onRecognitionEvent(RecognitionEvent event)
         {
             System.out.println("****** " + event);
-
+            listener.onInput(event.getResult().toString());
             if (event.getStatus() == 10) {
                 System.out.println("****** PINGED" + event);
                 sendPong=true;

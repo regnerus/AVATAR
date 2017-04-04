@@ -54,10 +54,12 @@ public class DialogueManager {
                 WOz woz = new WOz(language, apolloIP, apolloPort);
             }
             if(Objects.equals(args[0], "-qa")) {
+
                 QAMatcher qa = new QAMatcher(apolloIP,apolloPort);
+                System.out.print("test");
                 Input input = new Input();
-                input.input.setListener(qa);
-                qa.main(args);
+                input.main();
+                input.getInput().setListener(qa);
             }
         } else{
             System.err.println("Argument wrong. Format should be: (-woz|-qa) language ip port");

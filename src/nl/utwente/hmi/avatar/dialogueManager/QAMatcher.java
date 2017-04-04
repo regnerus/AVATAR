@@ -1,6 +1,6 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
-import nl.utwente.hmi.avatar.dialogueManager.QAMatcher.*;
+import nl.utwente.hmi.avatar.dialogueManager.qaMatcher.*;
 import pk.aamir.stompj.*;
 import nl.utwente.hmi.avatar.input.*;
 
@@ -49,16 +49,11 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
 
     public static void main(String[] args){
 
-//        QAMatcher qaResponder = new QAMatcher(apolloIP, apolloPort);
+//        qaMatcher qaResponder = new qaMatcher(apolloIP, apolloPort);
 
         String query = "";
         System.out.println("Question: ");
 
-        //while (true){
-        while ((query = Console.readString()) != ""){//this is for debugging easy, the qamatcher works with console
-            String answer = getAnswer(query);
-            sendAnswer(answer);
-        }
     }
 
     public static void sendBml(String answer) {
@@ -121,7 +116,7 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
 
         System.out.print("Answer: "+answer);
         System.out.print("Question: ");
-        System.out.flush();
+        //System.out.flush();
         return answer;
     }
 
@@ -132,6 +127,7 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
 
     @Override
     public void onInput(String msg) {
+        System.out.print("test");
         if (msg!=null){
             String answer = getAnswer(msg);
             sendAnswer(answer);
