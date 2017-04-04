@@ -1,5 +1,7 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
+import nl.utwente.hmi.avatar.dialogueManager.QAMatcher.SimpleQAResponder;
+
 import java.io.IOException;
 import java.util.Objects;
 import java.util.logging.FileHandler;
@@ -12,6 +14,9 @@ import java.util.logging.SimpleFormatter;
 public class DialogueManager {
     Logger logger = Logger.getLogger("MyLog");
     FileHandler fh;
+    static String apolloIP = "127.0.0.1";
+    static int apolloPort = 61613;
+
     public DialogueManager() {
         try {
 
@@ -38,8 +43,9 @@ public class DialogueManager {
                 WOz woz = new WOz();
                 woz.main(args);
             }
-            if(Objects.equals(args[0], "qa")) {
-
+            if(Objects.equals(args[0], "-qa")) {
+                SimpleQAResponder qa = new SimpleQAResponder(apolloIP,apolloPort);
+                qa.main(args);
             }
         }else{
             System.err.println("Argument wrong.");
