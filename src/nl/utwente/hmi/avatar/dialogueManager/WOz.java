@@ -12,8 +12,6 @@ import java.awt.event.ActionListener;
 public class WOz extends JFrame implements ErrorHandler, MessageHandler {
 
     public static WOz frame;
-    private JPanel contentPane;
-
     static Connection con;
 
     JTextField ip;
@@ -50,7 +48,7 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         setBounds(100, 100, 300, 250);
-        contentPane = new JPanel();
+        JPanel contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
