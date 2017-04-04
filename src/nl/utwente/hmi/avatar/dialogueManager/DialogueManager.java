@@ -10,22 +10,22 @@ import java.util.logging.SimpleFormatter;
  * Created by Bouke on 04/04/2017.
  */
 public class DialogueManager {
-    Logger logger = Logger.getLogger("MyLog");
+    private static final Logger LOGGER = Logger.getLogger( DialogueManager.class.getName() );
+
+    SimpleFormatter formatter = new SimpleFormatter();
     FileHandler fh;
+
     static String apolloIP = "127.0.0.1";
     static int apolloPort = 61613;
 
     public DialogueManager() {
         try {
-
-            // This block configure the logger with handler and formatter
-            fh = new FileHandler("test.log");
-            logger.addHandler(fh);
-            SimpleFormatter formatter = new SimpleFormatter();
+            fh = new FileHandler("logger.log");
             fh.setFormatter(formatter);
+            LOGGER.addHandler(fh);
 
             // the following statement is used to log any messages
-            logger.info("My first log");
+            LOGGER.info("My first log");
 
         } catch (SecurityException e) {
             e.printStackTrace();

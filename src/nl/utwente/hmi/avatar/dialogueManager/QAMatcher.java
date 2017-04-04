@@ -9,7 +9,7 @@ import pk.aamir.stompj.*;
 import java.util.logging.Logger;
 
 public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler {
-    private static Logger logger = Logger.getLogger("MyLog");
+    private static final Logger LOGGER = Logger.getLogger( DialogueManager.class.getName() );
 
     private static Connection con;
     private static String inTopic = "/topic/FlipperQAMatcher1Question";	//where this qa matcher is listening for questions
@@ -52,7 +52,7 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
 
     public static void main(String[] args){
 
-        QAMatcher qaResponder = new QAMatcher(apolloIP, apolloPort);
+//        QAMatcher qaResponder = new QAMatcher(apolloIP, apolloPort);
 
         String query = "";
         System.out.println("Question: ");
@@ -75,7 +75,7 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
             System.out.println("[sendAnswer] "+answer);
             System.out.println("[sendAnswer] "+outTopic);
             try{
-                logger.info(answer);
+                LOGGER.info(answer);
                 con.send(answer, outTopic);
             } catch(Exception e) {
                 System.out.println("[sendAnswer] "+e);

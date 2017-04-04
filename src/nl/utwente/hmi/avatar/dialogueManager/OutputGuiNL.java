@@ -4,37 +4,21 @@ Code: Merijn Bruijnes
 Date: Feb 2017
 */
 
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Date;
 import java.util.Random;
-
-import javax.swing.Box;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-import javax.swing.UIManager;
-import javax.swing.border.EmptyBorder;
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-
-import javax.swing.BoxLayout;
-import java.awt.Component;
-import java.util.logging.FileHandler;
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
 
 
 @SuppressWarnings("serial")
 public class OutputGuiNL extends JFrame {
-
-	FileHandler fh;
-	Logger logger = Logger.getLogger("MyLog");
+	private static final Logger LOGGER = Logger.getLogger( DialogueManager.class.getName() );
 	long bmlId = new Date().getTime();
 	
 	private JPanel mainPanel;
@@ -188,7 +172,7 @@ public class OutputGuiNL extends JFrame {
         String suffix = "</text></speech>"+behaviour+"</bml>";
        // System.out.println(prefix+answerleukebml[0]+suffix);
         sendBml(prefix+answer+suffix);
-		logger.info(answer);
+		LOGGER.info(answer);
     }
 	
 		
