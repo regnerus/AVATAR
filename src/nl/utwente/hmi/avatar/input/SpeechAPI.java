@@ -1,6 +1,7 @@
 package nl.utwente.hmi.avatar.input;
 
 
+import ee.ioc.phon.netspeechapi.duplex.DuplexRecognitionSession;
 import ee.ioc.phon.netspeechapi.duplex.RecognitionEvent;
 import ee.ioc.phon.netspeechapi.duplex.RecognitionEventListener;
 import ee.ioc.phon.netspeechapi.duplex.WsDuplexRecognitionSession;
