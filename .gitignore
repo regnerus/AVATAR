@@ -22,3 +22,4 @@ findbugs.html
 log
 *.launch
 junit*.properties
+*.idea
