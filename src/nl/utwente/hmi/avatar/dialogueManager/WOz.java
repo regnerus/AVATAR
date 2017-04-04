@@ -93,6 +93,13 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
             }
         });
 
+        btnWOz.setBounds(205, 150, 70, 40);
+        contentPane.add(btnWOz);
+
+        JLabel lblSelectCondition = new JLabel("Specify IP, Port and Topic:");
+        lblSelectCondition.setBounds(8, 13, 269, 16);
+        contentPane.add(lblSelectCondition);
+    }
     public static String getAppolloIP() {
         return appolloIP;
     }
@@ -133,15 +140,6 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
         });
     }
 
-    //create frame
-
-        btnWOz.setBounds(205, 150, 70, 40);
-        contentPane.add(btnWOz);
-
-        JLabel lblSelectCondition = new JLabel("Specify IP, Port and Topic:");
-        lblSelectCondition.setBounds(8, 13, 269, 16);
-        contentPane.add(lblSelectCondition);
-    }
 
     @Override
     public void onMessage(Message msg) {
