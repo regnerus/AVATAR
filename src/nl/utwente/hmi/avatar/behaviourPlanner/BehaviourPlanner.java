@@ -5,4 +5,3 @@ package nl.utwente.hmi.avatar.behaviourPlanner;
  */
 public class BehaviourPlanner {
 }
-s
