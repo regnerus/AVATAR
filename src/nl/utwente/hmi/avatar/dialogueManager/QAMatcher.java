@@ -6,6 +6,9 @@ import nl.utwente.hmi.avatar.dialogueManager.qaMatcher.DialogStore;
 import nl.utwente.hmi.avatar.dialogueManager.qaMatcher.DomDialogsParser;
 import pk.aamir.stompj.*;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.Date;
 import java.util.logging.Logger;
 
 public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler {
@@ -13,13 +16,9 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
 
     private static Connection con;
     private static String inTopic = "/topic/FlipperQAMatcher1Question";	//where this qa matcher is listening for questions
-    private static String outTopic = "/topic/bmlRequests";				//where this qamatcher sends the answer
-
-    static String apolloIP = "127.0.0.1";
-    static int apolloPort = 61613;
 
     //the file that holds the specification of the matching Q and A's, found in directory resources/qamatcher
-    static String filename = "vragen.xml";
+    static String filename = "alice_questions.xml";
 
     //the qa parser etc
     static DomDialogsParser ddp = new DomDialogsParser(filename);
@@ -64,23 +63,38 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
         }
     }
 
-    public static void sendAnswer(String answer) {
+    public static void sendBml(String answer) {
         if (answer!=null){
+
             String prefix = "{ \"bml\": { \"content\": \"";
             String suffix = "\" } }";
-            answer = prefix+answer+suffix; //quick and dirty jason
-            answer = answer.replace("  ", " ");//remove double spaces
-            answer = answer.replace("", "").replace("\r", " ").replace("\n", " ");;//remove double spaces and linebreaks
+
+            try {
+                answer = prefix + URLEncoder.encode(answer, "UTF-8") + suffix;
+                answer = answer.replace("  ", " ");//remove double spaces
+                answer = answer.replace("", "").replace("\r", " ").replace("\n", " ");;//remove double spaces and linebreaks
+            } catch (UnsupportedEncodingException e) {
+                System.out.println("[sendBml] Encoding failed.");
+            }
 
             System.out.println("[sendAnswer] "+answer);
-            System.out.println("[sendAnswer] "+outTopic);
+            System.out.println("[sendAnswer] "+appolloTopic);
             try{
                 LOGGER.info(answer);
-                con.send(answer, outTopic);
+                con.send(answer, appolloTopic);
             } catch(Exception e) {
                 System.out.println("[sendAnswer] "+e);
             }
         }
+    }
+
+    public static void sendAnswer(String answer) {
+        long bmlId = new Date().getTime();
+        String prefix = "<bml xmlns=\"http://www.bml-initiative.org/bml/bml-1.0\" id=\"bml"+(++bmlId)+"\" composition=\"REPLACE\"><speech id=\"speech1\" start=\"0\"><text>";
+
+        String suffix = "</text></speech></bml>";
+        sendBml(prefix+answer+suffix);
+        LOGGER.info(answer);
     }
 
     @Override

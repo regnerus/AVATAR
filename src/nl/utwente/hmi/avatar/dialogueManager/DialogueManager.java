@@ -17,6 +17,7 @@ public class DialogueManager {
 
     static String apolloIP = "127.0.0.1";
     static int apolloPort = 61613;
+    static String appolloTopic = "/topic/bmlRequests";
 
     public DialogueManager() {
         try {
@@ -48,14 +49,17 @@ public class DialogueManager {
             String language = args[1];
 
             if(Objects.equals(args[0], "-woz")) {
+
+
                 WOz woz = new WOz(language, apolloIP, apolloPort);
             }
             if(Objects.equals(args[0], "-qa")) {
                 QAMatcher qa = new QAMatcher(apolloIP,apolloPort);
+
                 qa.main(args);
             }
         } else{
-            System.err.println("Argument wrong. Format should be: (-woz|-qa) ip port");
+            System.err.println("Argument wrong. Format should be: (-woz|-qa) language ip port");
             System.exit(1);
         }
     }

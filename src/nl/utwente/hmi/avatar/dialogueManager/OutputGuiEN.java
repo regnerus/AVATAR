@@ -162,6 +162,7 @@ public class OutputGuiEN extends JFrame {
             String jsonthing = prefix+URLEncoder.encode(bml, "UTF-8")+suffix;
             System.out.println("[sendBml] Sending: "+bml);
             WOz.con.send(jsonthing, WOz.appolloTopic);
+
         } catch (UnsupportedEncodingException e) {
             System.out.println("[sendBml] Encoding failed.");
         }

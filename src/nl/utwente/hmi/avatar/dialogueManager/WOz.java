@@ -3,10 +3,7 @@ package nl.utwente.hmi.avatar.dialogueManager;
 import pk.aamir.stompj.*;
 
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Objects;
 
 @SuppressWarnings("serial")
@@ -14,16 +11,6 @@ public class WOz extends DialogueManager implements ErrorHandler, MessageHandler
     private JPanel mainPanel = new JPanel(); // this is what I'll add to contentPane
     public static JFrame frame;
     static Connection con;
-
-    JTextField ip;
-    //static String appolloIP = "130.89.12.234";
-    static String appolloIP = "130.89.234.44";
-
-    JTextField port;
-    static int appolloPort = 61613;
-
-    JTextField topic;
-    static String appolloTopic = "/topic/bmlRequests";
 
     public WOz(String language, String appolloIP, int appolloPort){
         String feedbackTopic = "/topic/bmlFeedback";
@@ -40,7 +27,7 @@ public class WOz extends DialogueManager implements ErrorHandler, MessageHandler
         //topiclistener bmlfeedback
         con.subscribe(feedbackTopic, true);
         con.addMessageHandler(feedbackTopic, this);
-        if(Objects.equals(language, "english")) {
+        if(Objects.equals(language, "EN")) {
             try {
                 OutputGuiEN outputFrame = new OutputGuiEN();
 
@@ -54,7 +41,7 @@ public class WOz extends DialogueManager implements ErrorHandler, MessageHandler
                 e.printStackTrace();
             }
         }
-        if(Objects.equals(language, "dutch")) {
+        if(Objects.equals(language, "NL")) {
             try {
                 OutputGuiNL outputFrame = new OutputGuiNL();
 
