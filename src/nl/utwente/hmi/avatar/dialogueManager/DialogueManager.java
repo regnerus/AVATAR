@@ -38,16 +38,17 @@ public class DialogueManager {
     }
 
     public static void main(String[] args){
-        System.out.print(args[1]);
-        if(args.length > 0){
+        if(args.length > 2){
             try {
-                apolloPort= Integer.parseInt(args[3]);
+                apolloIP = args[2];
+                apolloPort = Integer.parseInt(args[3]);
             } catch (NumberFormatException e) {
                 System.err.println("Argument" + args[0] + " must be an integer.");
                 System.exit(1);
             }
-            apolloIP = args[2];
+
             String language = args[1];
+
             if(Objects.equals(args[0], "-woz")) {
                 WOz woz = new WOz(language, apolloIP, apolloPort);
             }
@@ -58,7 +59,7 @@ public class DialogueManager {
                 qa.main(args);
             }
         } else{
-            System.err.println("Argument wrong.");
+            System.err.println("Argument wrong. Format should be: (-woz|-qa) ip port");
             System.exit(1);
         }
     }
