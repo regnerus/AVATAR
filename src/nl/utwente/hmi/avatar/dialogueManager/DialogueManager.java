@@ -37,11 +37,18 @@ public class DialogueManager {
 
     }
     public static void main(String[] args){
-        System.out.print(args[0]);
+        System.out.print(args[1]);
         if(args.length > 0){
+            try {
+                apolloPort= Integer.parseInt(args[3]);
+            } catch (NumberFormatException e) {
+                System.err.println("Argument" + args[0] + " must be an integer.");
+                System.exit(1);
+            }
+            apolloIP = args[2];
+            String language = args[1];
             if(Objects.equals(args[0], "-woz")) {
-                WOz woz = new WOz();
-                woz.main(args);
+                WOz woz = new WOz(language, apolloIP, apolloPort);
             }
             if(Objects.equals(args[0], "-qa")) {
                 SimpleQAResponder qa = new SimpleQAResponder(apolloIP,apolloPort);
