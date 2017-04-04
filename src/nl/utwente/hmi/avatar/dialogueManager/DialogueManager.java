@@ -1,7 +1,5 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
-import nl.utwente.hmi.avatar.dialogueManager.QAMatcher.SimpleQAResponder;
-
 import java.io.IOException;
 import java.util.Objects;
 import java.util.logging.FileHandler;
@@ -36,6 +34,7 @@ public class DialogueManager {
         }
 
     }
+
     public static void main(String[] args){
         System.out.print(args[0]);
         if(args.length > 0){
@@ -44,10 +43,10 @@ public class DialogueManager {
                 woz.main(args);
             }
             if(Objects.equals(args[0], "-qa")) {
-                SimpleQAResponder qa = new SimpleQAResponder(apolloIP,apolloPort);
+                QAMatcher qa = new QAMatcher(apolloIP,apolloPort);
                 qa.main(args);
             }
-        }else{
+        } else{
             System.err.println("Argument wrong.");
             System.exit(1);
         }
