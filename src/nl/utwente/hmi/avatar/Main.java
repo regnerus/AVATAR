@@ -1,9 +1,7 @@
 package nl.utwente.hmi.avatar;
 
-import nl.utwente.hmi.avatar.input.Input;
-
 public class Main {
-    private Input input;
+
 
     public static void main(String[] args) {
 //        String method = args[0];

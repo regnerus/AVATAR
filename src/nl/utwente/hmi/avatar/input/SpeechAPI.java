@@ -85,8 +85,8 @@ public class SpeechAPI extends Input
     TargetDataLine targetDataLine;
     static AudioInputStream audioInputStream;
 
-    static String wsUrl = "ws://nlspraak.ewi.utwente.nl:8889/client/ws/speech";
-    static String wsStatusURL = "ws://nlspraak.ewi.utwente.nl:8889/client/ws/status";
+    private static String DEFAULT_WS_URL;
+    private static String DEFAULT_WS_STATUS_URL;
 
     static class RecognitionEventAccumulator implements RecognitionEventListener, WorkerCountInterface
     {
@@ -173,51 +173,40 @@ public class SpeechAPI extends Input
         }
     }
 
-    public SpeechAPI(String language, RecognitionEventListener rel) {
-
-        if(language == "EN") {
-            wsUrl = "ws://nlspraak.ewi.utwente.nl:8890/client/ws/speech";
-            wsStatusURL = "ws://nlspraak.ewi.utwente.nl:8890/client/ws/status";
+    public SpeechAPI(String server, RecognitionEventListener rel) {
+        if (server.matches("^.*:[0-9]+$")) {
+            DEFAULT_WS_URL = "ws://"+server+"/client/ws/speech";
+            DEFAULT_WS_STATUS_URL = "ws://"+server+"/client/ws/status";
+        } else {
+            System.out.println("Please specify server and port to use (this.is.my.server:0000)");
         }
 
-        try
-        {
+        try {
             RecognitionEventAccumulator statusEventAccumulator = new RecognitionEventAccumulator();
-            URI statusUri = new URI(wsStatusURL);
-            WorkerCountClient status_session = new WorkerCountClient(statusUri, statusEventAccumulator);
+            URI statusUri = new URI(DEFAULT_WS_STATUS_URL);
+            WorkerCountClient status_session = new WorkerCountClient(statusUri,statusEventAccumulator);
             status_session.connect();
-        }
-        catch (Exception e3)
-        {
+        } catch (Exception e3) {
             System.err.println("Caught Exception: " + e3.getMessage());
         }
 
         WsDuplexRecognitionSession session = null;
-        try
-        {
-            //RecognitionEventAccumulator eventAccumulator = new RecognitionEventAccumulator();
-            session = new WsDuplexRecognitionSession(wsUrl);
-            //session.addRecognitionEventListener(eventAccumulator);
-            if (rel != null)
-            {
-                session.addRecognitionEventListener(rel);
-            }
+        try {
+            RecognitionEventAccumulator eventAccumulator = new RecognitionEventAccumulator();
+            session = new WsDuplexRecognitionSession(DEFAULT_WS_URL);
+            session.addRecognitionEventListener(eventAccumulator);
             session.setUserId("laurensw");
             session.setContentId("SpeechAPIDemo");
             session.connect();
-        }
-        catch (Exception e2)
-        {
+        } catch (Exception e2){
             System.err.println("Caught Exception: " + e2.getMessage());
         }
         captureAudio(session);
     }
 
     //This method captures audio input from a microphone and saves it in a ByteArrayOutputStream object.
-    private void captureAudio(DuplexRecognitionSession session)
-    {
-        try
-        {
+    private void captureAudio(DuplexRecognitionSession session){
+        try{
             //Get everything set up for capture
             audioFormat = getAudioFormat();
             DataLine.Info dataLineInfo = new DataLine.Info(TargetDataLine.class, audioFormat);
@@ -229,9 +218,7 @@ public class SpeechAPI extends Input
             // It will run until the Stop button is clicked.
             Thread captureThread = new Thread(new CaptureThread(session));
             captureThread.start();
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             System.out.println(e);
             System.exit(0);
         }
