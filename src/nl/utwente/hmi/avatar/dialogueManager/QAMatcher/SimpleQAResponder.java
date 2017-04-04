@@ -43,6 +43,9 @@ public class SimpleQAResponder implements ErrorHandler, MessageHandler {
     }  
 	
 	public static void main(String[] args){
+
+		SimpleQAResponder qaResponder = new SimpleQAResponder(apolloIP, apolloPort);
+
 		String query = "";		
 		System.out.println("Question: ");
 		
