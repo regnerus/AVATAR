@@ -1,4 +1,4 @@
-package nl.utwente.hmi.avatar.dialogueManager.QAMatcher;
+package nl.utwente.hmi.avatar.dialogueManager.qaMatcher;
 
 import java.util.*;
 import java.io.*;
