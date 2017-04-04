@@ -1,32 +1,12 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
-/**
- * Created by Bouke on 04/04/2017.
- */
+import pk.aamir.stompj.*;
 
-/*
-Code: Merijn Bruijnes
-Date: Feb 2017
-*/
-
-        import java.awt.Dimension;
-        import java.awt.EventQueue;
-        import java.awt.event.ActionEvent;
-        import java.awt.event.ActionListener;
-        import javax.swing.JButton;
-        import javax.swing.JComboBox;
-        import javax.
-        import javax.swing.JFrame;
-        import javax.swing.JTextField;
-        import javax.swing.JLabel;
-        import javax.swing.JPanel;
-        import javax.swing.border.EmptyBorder;
-        import pk.aamir.stompj.Connection;
-        import pk.aamir.stompj.ErrorHandler;
-        import pk.aamir.stompj.ErrorMessage;
-        import pk.aamir.stompj.Message;
-        import pk.aamir.stompj.MessageHandler;
-        import pk.aamir.stompj.StompJException;
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 @SuppressWarnings("serial")
 public class WOz extends JFrame implements ErrorHandler, MessageHandler {
