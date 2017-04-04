@@ -32,7 +32,7 @@ public class OutputGuiNL extends JFrame {
 	
 	long bmlId = new Date().getTime();
 	
-	private JPanel contentPane;
+	private JPanel mainPanel;
 	private JPanel interviewPane;
 	private JPanel remarkPane;
 	private JPanel evadeQPane;
@@ -506,10 +506,10 @@ public class OutputGuiNL extends JFrame {
 		});
 		
 		//create panes and labels
-		contentPane = new JPanel();
-		contentPane.setBounds(200, 500, 2000, 1000);
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
+		mainPanel = new JPanel();
+		mainPanel.setBounds(200, 500, 2000, 1000);
+		mainPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(mainPanel);
 		final JLabel lbl = new JLabel("Politie: ");
 		final JLabel lblInterviewQ = new JLabel("Vragen: ");
 		final JLabel lblRemarks = new JLabel("Feedback: ");
@@ -597,16 +597,16 @@ public class OutputGuiNL extends JFrame {
 		evadeQPane.add(btnEvade10);
 
 		//add panes
-		contentPane.add(remarkPane,BorderLayout.WEST);
-		contentPane.add(Box.createRigidArea(new Dimension(25,0)));
-		contentPane.add(interviewPane, BorderLayout.CENTER);
-		contentPane.add(Box.createRigidArea(new Dimension(25,0)));
-		contentPane.add(evadeQPane, BorderLayout.EAST);
-		contentPane.setAlignmentY(Component.TOP_ALIGNMENT);	
-		contentPane.add(Box.createRigidArea(new Dimension(25,0)));
-		contentPane.add(openSpeechPane, BorderLayout.SOUTH);
-		contentPane.add(Box.createRigidArea(new Dimension(5,0)));
-		contentPane.add(openSpeechButtonPane, BorderLayout.NORTH);
-		contentPane.add(Box.createRigidArea(new Dimension(25,0)));
+		mainPanel.add(remarkPane,BorderLayout.WEST);
+		mainPanel.add(Box.createRigidArea(new Dimension(25,0)));
+		mainPanel.add(interviewPane, BorderLayout.CENTER);
+		mainPanel.add(Box.createRigidArea(new Dimension(25,0)));
+		mainPanel.add(evadeQPane, BorderLayout.EAST);
+		mainPanel.setAlignmentY(Component.TOP_ALIGNMENT);
+		mainPanel.add(Box.createRigidArea(new Dimension(25,0)));
+		mainPanel.add(openSpeechPane, BorderLayout.SOUTH);
+		mainPanel.add(Box.createRigidArea(new Dimension(5,0)));
+		mainPanel.add(openSpeechButtonPane, BorderLayout.NORTH);
+		mainPanel.add(Box.createRigidArea(new Dimension(25,0)));
 	}
 }

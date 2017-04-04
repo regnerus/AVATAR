@@ -9,9 +9,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 @SuppressWarnings("serial")
-public class WOz extends JFrame implements ErrorHandler, MessageHandler {
-
-    public static WOz frame;
+public class WOz extends DialogueManager implements ErrorHandler, MessageHandler {
+    private JPanel mainPanel = new JPanel(); // this is what I'll add to contentPane
+    public static JFrame frame;
     static Connection con;
 
     JTextField ip;
@@ -45,25 +45,22 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
         con.addMessageHandler(feedbackTopic, this);
     }
     public WOz() {
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        setBounds(100, 100, 350, 350);
-        JPanel contentPane = new JPanel();
-        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-        setContentPane(contentPane);
-        contentPane.setLayout(null);
+        mainPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+        mainPanel.setLayout(null);
 
         ip = new JTextField (appolloIP);
         ip.setBounds(8, 50, 190, 40);
-        contentPane.add(ip);
+        mainPanel.add(ip);
 
         port = new JTextField (Integer.toString(appolloPort));
         port.setBounds(8, 100, 190, 40);
-        contentPane.add(port);
+        mainPanel.add(port);
 
         topic = new JTextField (appolloTopic);
         topic.setBounds(8, 150, 190, 40);
-        contentPane.add(topic);
+        mainPanel.add(topic);
 
         JButton btnWOzEN = new JButton("WOz English");
         btnWOzEN.addActionListener(new ActionListener() {
@@ -109,7 +106,7 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
                     outputFrame.setMinimumSize(new Dimension(850, 450));
 
                     //frame.dispose();
-                    frame.hide();
+                    //frame.hide();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -117,35 +114,13 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
         });
         btnWOzNL.setBounds(205, 150, 150, 40);
         btnWOzEN.setBounds(205, 190, 150, 40);
-        contentPane.add(btnWOzNL);
-        contentPane.add(btnWOzEN);
+        mainPanel.add(btnWOzNL);
+        mainPanel.add(btnWOzEN);
 
         JLabel lblSelectCondition = new JLabel("Specify IP, Port and Topic:");
         lblSelectCondition.setBounds(8, 13, 269, 16);
-        contentPane.add(lblSelectCondition);
-    }
-    public static String getAppolloIP() {
-        return appolloIP;
-    }
+        mainPanel.add(lblSelectCondition);
 
-    public static void setAppolloIP(String appolloIP) {
-        WOz.appolloIP = appolloIP;
-    }
-
-    public static int getAppolloPort() {
-        return appolloPort;
-    }
-
-    public static void setAppolloPort(int appolloPort) {
-        WOz.appolloPort = appolloPort;
-    }
-
-    public static String getAppolloTopic() {
-        return appolloTopic;
-    }
-
-    public static void setAppolloTopic(String appolloTopic) {
-        WOz.appolloTopic = appolloTopic;
     }
 
     //launch app
@@ -153,10 +128,14 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    frame = new WOz();
+                    WOz woz = new WOz();
+
+                    frame = new JFrame("Avatar Politie WOZ: Setup");
+                    frame.getContentPane().add(woz.getMainComponent());
                     frame.setVisible(true);
                     frame.setResizable(true);
-                    frame.setTitle("Avatar Politie WOZ: Setup");
+                    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                    frame.setBounds(100, 100, 350, 350);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -174,4 +153,9 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
     public void onError(ErrorMessage err) {
         System.out.println("[onError] "+err.getMessage());
     }
+
+    public JComponent getMainComponent() {
+        return mainPanel;
+    }
+
 }
