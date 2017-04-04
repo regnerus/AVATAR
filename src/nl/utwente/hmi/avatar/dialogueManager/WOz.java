@@ -106,7 +106,7 @@ public class WOz extends DialogueManager implements ErrorHandler, MessageHandler
                     outputFrame.setMinimumSize(new Dimension(850, 450));
 
                     //frame.dispose();
-                    frame.hide();
+                    //frame.hide();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -122,29 +122,6 @@ public class WOz extends DialogueManager implements ErrorHandler, MessageHandler
         mainPanel.add(lblSelectCondition);
 
     }
-    public static String getAppolloIP() {
-        return appolloIP;
-    }
-
-    public static void setAppolloIP(String appolloIP) {
-        WOz.appolloIP = appolloIP;
-    }
-
-    public static int getAppolloPort() {
-        return appolloPort;
-    }
-
-    public static void setAppolloPort(int appolloPort) {
-        WOz.appolloPort = appolloPort;
-    }
-
-    public static String getAppolloTopic() {
-        return appolloTopic;
-    }
-
-    public static void setAppolloTopic(String appolloTopic) {
-        WOz.appolloTopic = appolloTopic;
-    }
 
     //launch app
     public static void main(String[] args) {
@@ -158,7 +135,6 @@ public class WOz extends DialogueManager implements ErrorHandler, MessageHandler
                     frame.setVisible(true);
                     frame.setResizable(true);
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    //frame.setContentPane(contentPane);
                     frame.setBounds(100, 100, 350, 350);
                 } catch (Exception e) {
                     e.printStackTrace();
