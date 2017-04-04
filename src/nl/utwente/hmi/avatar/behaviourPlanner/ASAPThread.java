@@ -18,7 +18,7 @@ public class ASAPThread extends Thread implements MiddlewareListener {
         ERROR("Unknown Error");
 
         private final String descr;
-        private Status(final String descr) {
+        Status(final String descr) {
             this.descr = descr;
         }
 

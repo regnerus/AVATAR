@@ -61,7 +61,6 @@ public class ASAPStarter
         BMLInfo.addCustomFloatAttribute(PostureShiftBehaviour.class, "http://asap-project.org/convanim", "amount");
 
         environments = new ArrayList<Environment>();
-        if(gui) {final JComponentEnvironment jce = setupJComponentEnvironment(); }
         final AsapEnvironment ee = new AsapEnvironment();
 
         ClockDrivenCopyEnvironment ce = new ClockDrivenCopyEnvironment(1000 / 60);
@@ -77,8 +76,12 @@ public class ASAPStarter
         environments.add(we);
 
         environments.add(ce);
-        if(gui) { environments.add(jce); }
         environments.add(aue);
+
+        if(gui) {
+            final JComponentEnvironment jce = setupJComponentEnvironment();
+            environments.add(jce);
+        }
 
         ee.init(environments, ope.getPhysicsClock());
         ope.addPrePhysicsCopyListener(ee);
