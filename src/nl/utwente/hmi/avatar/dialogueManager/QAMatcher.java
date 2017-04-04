@@ -1,14 +1,11 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
-import nl.utwente.hmi.avatar.dialogueManager.qaMatcher.Console;
-import nl.utwente.hmi.avatar.dialogueManager.qaMatcher.Dialog;
-import nl.utwente.hmi.avatar.dialogueManager.qaMatcher.DialogStore;
-import nl.utwente.hmi.avatar.dialogueManager.qaMatcher.DomDialogsParser;
+import nl.utwente.hmi.avatar.dialogueManager.QAMatcher.*;
 import pk.aamir.stompj.*;
-
+import nl.utwente.hmi.avatar.input.*;
 import java.util.logging.Logger;
 
-public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler {
+public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler ,InputListener{
     private static final Logger LOGGER = Logger.getLogger( DialogueManager.class.getName() );
 
     private static Connection con;
@@ -118,4 +115,13 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
         System.out.println("[onError] "+err.getMessage());
     }
 
+    @Override
+    public void onInput(String msg) {
+        if (msg!=null){
+            String answer = getAnswer(msg);
+            sendAnswer(answer);
+        }
+
+
+    }
 }

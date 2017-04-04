@@ -1,5 +1,7 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
+import nl.utwente.hmi.avatar.input.Input;
+
 import java.io.IOException;
 import java.util.Objects;
 import java.util.logging.FileHandler;
@@ -51,6 +53,8 @@ public class DialogueManager {
             }
             if(Objects.equals(args[0], "-qa")) {
                 QAMatcher qa = new QAMatcher(apolloIP,apolloPort);
+                Input input = new Input();
+                input.input.setListener(qa);
                 qa.main(args);
             }
         } else{
