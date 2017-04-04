@@ -1,3 +1,0 @@
-<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
-     <gaze id="gaze1" start="1" ready="2" end="130" influence="WAIST" target="greensphere"/> 
- </bml>

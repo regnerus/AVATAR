@@ -1,5 +1,0 @@
-{
-    "msgType": "CleVRPlayAction",
-    "agentId": "${vhId}",
-    "target": "${name}"
-}

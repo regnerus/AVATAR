@@ -1,6 +1,0 @@
-{
-    "msgType": "CleVRPointAt",
-    "agentId": "${vhId}",
-    "target": "${target}",
-    "duration": ${duration}
-}
