@@ -2,8 +2,12 @@ package nl.utwente.hmi.avatar.dialogueManager.QAMatcher;
 
 import pk.aamir.stompj.*;
 
+import java.util.logging.Logger;
+
 public class SimpleQAResponder implements ErrorHandler, MessageHandler {
-    private static Connection con;
+	private static Logger logger = Logger.getLogger("MyLog");
+
+	private static Connection con;
 	private static String inTopic = "/topic/FlipperQAMatcher1Question";	//where this qa matcher is listening for questions
 	private static String outTopic = "/topic/bmlRequests";				//where this qamatcher sends the answer
     
@@ -71,6 +75,7 @@ public class SimpleQAResponder implements ErrorHandler, MessageHandler {
 			} catch(Exception e) {
 				System.out.println("[sendAnswer] "+e);
 			}
+			logger.info(answer);
 		}
 	}
 

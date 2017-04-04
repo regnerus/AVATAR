@@ -1,6 +1,7 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
 import java.io.IOException;
+import java.util.Objects;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
@@ -31,10 +32,19 @@ public class DialogueManager {
 
     }
     public static void main(String[] args){
+        System.out.print(args[0]);
+        if(args.length > 0){
+            if(Objects.equals(args[0], "-woz")) {
+                WOz woz = new WOz();
+                woz.main(args);
+            }
+            if(Objects.equals(args[0], "qa")) {
 
-            WOz woz = new WOz();
-            woz.main(args);
-
+            }
+        }else{
+            System.err.println("Argument wrong.");
+            System.exit(1);
+        }
     }
 
 }
