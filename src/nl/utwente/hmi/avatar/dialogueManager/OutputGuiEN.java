@@ -29,7 +29,7 @@ import java.awt.Component;
 
 
 @SuppressWarnings("serial")
-public class OutputGui extends JFrame {
+public class OutputGuiEN extends JFrame {
 
     long bmlId = new Date().getTime();
 
@@ -187,7 +187,7 @@ public class OutputGui extends JFrame {
     }
 
 
-    public OutputGui() {
+    public OutputGuiEN() {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

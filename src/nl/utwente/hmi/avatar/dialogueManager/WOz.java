@@ -12,13 +12,11 @@ import java.awt.event.ActionListener;
 public class WOz extends JFrame implements ErrorHandler, MessageHandler {
 
     public static WOz frame;
-    private JPanel contentPane;
-
     static Connection con;
 
     JTextField ip;
     //static String appolloIP = "130.89.12.234";
-    static String appolloIP = "127.0.0.1";
+    static String appolloIP = "130.89.234.44";
 
     JTextField port;
     static int appolloPort = 61613;
@@ -49,8 +47,8 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
     public WOz() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        setBounds(100, 100, 300, 250);
-        contentPane = new JPanel();
+        setBounds(100, 100, 350, 350);
+        JPanel contentPane = new JPanel();
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
         setContentPane(contentPane);
         contentPane.setLayout(null);
@@ -67,8 +65,8 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
         topic.setBounds(8, 150, 190, 40);
         contentPane.add(topic);
 
-        JButton btnWOz = new JButton("WOz");
-        btnWOz.addActionListener(new ActionListener() {
+        JButton btnWOzEN = new JButton("WOz English");
+        btnWOzEN.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent arg0) {
                 //update internal variables from settings-fields
                 appolloIP = ip.getText();
@@ -78,7 +76,7 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
                 appconnect = new WOz(appolloIP, appolloPort);
 
                 try {
-                    OutputGui outputFrame = new OutputGui();
+                    OutputGuiEN outputFrame = new OutputGuiEN();
 
                     outputFrame.setTitle("Avatar Politie WOZ interface");
                     outputFrame.setLocation(100, 5);
@@ -92,9 +90,35 @@ public class WOz extends JFrame implements ErrorHandler, MessageHandler {
                 }
             }
         });
+        JButton btnWOzNL = new JButton("WOz Nederlands");
+        btnWOzNL.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent arg0) {
+                //update internal variables from settings-fields
+                appolloIP = ip.getText();
+                appolloPort = Integer.parseInt(port.getText());
+                appolloTopic = topic.getText();
 
-        btnWOz.setBounds(205, 150, 70, 40);
-        contentPane.add(btnWOz);
+                appconnect = new WOz(appolloIP, appolloPort);
+
+                try {
+                    OutputGuiNL outputFrame = new OutputGuiNL();
+
+                    outputFrame.setTitle("Avatar Politie WOZ interface");
+                    outputFrame.setLocation(100, 5);
+                    outputFrame.setVisible(true);
+                    outputFrame.setMinimumSize(new Dimension(850, 450));
+
+                    //frame.dispose();
+                    frame.hide();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+        btnWOzNL.setBounds(205, 150, 150, 40);
+        btnWOzEN.setBounds(205, 190, 150, 40);
+        contentPane.add(btnWOzNL);
+        contentPane.add(btnWOzEN);
 
         JLabel lblSelectCondition = new JLabel("Specify IP, Port and Topic:");
         lblSelectCondition.setBounds(8, 13, 269, 16);
