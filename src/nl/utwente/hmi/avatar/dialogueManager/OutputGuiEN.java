@@ -7,6 +7,7 @@ Date: Feb 2017
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Date;
@@ -25,12 +26,15 @@ import java.awt.Dimension;
 
 import javax.swing.BoxLayout;
 import java.awt.Component;
-
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 
 @SuppressWarnings("serial")
 public class OutputGuiEN extends JFrame {
-
+    FileHandler fh;
+    Logger logger = Logger.getLogger("MyLog");
     long bmlId = new Date().getTime();
 
     private JPanel contentPane;
@@ -184,11 +188,27 @@ public class OutputGuiEN extends JFrame {
         String suffix = "</text></speech>"+behaviour+"</bml>";
         // System.out.println(prefix+answerleukebml[0]+suffix);
         sendBml(prefix+answer+suffix);
+        logger.info(answer);
     }
 
 
     public OutputGuiEN() {
+        try {
 
+            // This block configure the logger with handler and formatter
+            fh = new FileHandler("test.log");
+            logger.addHandler(fh);
+            SimpleFormatter formatter = new SimpleFormatter();
+            fh.setFormatter(formatter);
+
+            // the following statement is used to log any messages
+            logger.info("My first log");
+
+        } catch (SecurityException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         try {
