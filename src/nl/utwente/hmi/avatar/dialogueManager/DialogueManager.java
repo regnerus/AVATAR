@@ -30,5 +30,11 @@ public class DialogueManager {
         }
 
     }
+    public static void main(String[] args){
+
+            WOz woz = new WOz();
+            woz.main(args);
+
+    }
 
 }
