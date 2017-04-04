@@ -1,0 +1,14 @@
+<qa_root>
+<dialog id="0000.0">
+<answerlist>
+<answer type="certain">
+ 2
+</answer>
+</answerlist>
+<questionlist>
+<question>
+ 1 een test blaat foo 
+</question>
+</questionlist>
+</dialog>
+</qa_root>

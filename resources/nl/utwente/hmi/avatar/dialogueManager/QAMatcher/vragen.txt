@@ -1,0 +1,47 @@
+<qa_root>
+<dialog>
+<answer type=uncertain>
+ik weet niet precies hoe laat 
+</answer>
+<question>
+hoe laat was dat ?
+wanneer gaan we beginnen ?
+weet je hoe laat het was ?
+</question>
+</dialog>
+<dialog>
+<answer type=uncertain>
+<ik denk drie>
+</answer>
+<answer type=certain>
+<het waren er drie>
+</answer>
+<question>
+hoeveel mannen liepen er ?
+weet je hoeveel mannen er waren ?
+</question>
+</dialog>
+<dialog>
+<answer type=uncertain>
+dat weet ik niet zeker
+</answer>
+<question>
+weet je dat wel zeker ?
+waren het allemaal mannen ?
+</question>
+</dialog>
+<dialog>
+<answer type=uncertain>
+ik geloof dat het een vw was 
+</answer>
+<answer type=certain>
+dat was een vw 
+</answer>
+<question>
+wat voor auto was het ?
+weet je het merk van de auto ?
+welk merk had die auto ?
+wat voor soort auto was het ?
+</question>
+</dialog>
+</qa_root>

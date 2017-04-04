@@ -1,18 +1,6 @@
 package nl.utwente.hmi.avatar.dialogueManager.QAMatcher;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
-import java.net.URLEncoder;
-import java.util.Date;
-import java.util.Random;
-import java.util.regex.Pattern;
-import org.json.simple.parser.JSONParser;
-import pk.aamir.stompj.Connection;
-import pk.aamir.stompj.ErrorHandler;
-import pk.aamir.stompj.ErrorMessage;
-import pk.aamir.stompj.Message;
-import pk.aamir.stompj.MessageHandler;
-import pk.aamir.stompj.StompJException;
+import pk.aamir.stompj.*;
 
 public class SimpleQAResponder implements ErrorHandler, MessageHandler {
     private static Connection con;
@@ -21,10 +9,9 @@ public class SimpleQAResponder implements ErrorHandler, MessageHandler {
     
     static String apolloIP = "127.0.0.1";
 	static int apolloPort = 61613;
-	static TestQAResponder testqaresponder = new TestQAResponder(apolloIP, apolloPort);
 	
 	//the file that holds the specification of the matching Q and A's, found in directory resources/qamatcher
-	static String filename = "FlipperTutorialQA1.xml";
+	static String filename = "vragen.xml";
 	
 	//the qa parser etc
 	static DomDialogsParser ddp = new DomDialogsParser(filename);

@@ -1,0 +1,1373 @@
+﻿<qa_root>
+<dialog id="0001">
+<answerlist>
+<answer type="uncertain">
+The weather is quite nice, as you can see.
+</answer>
+<answer type="certain">
+It is always the same. Sometimes a bit warmer, if your computer is working really hard.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What is the weather like?
+</question>
+<question>
+How is the weather?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0002">
+<answerlist>
+<answer type="certain">
+Thank you, I like you too. But I like Alice even more, let's talk about her. Do you want to know what happened from the beginning or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+You are very kind.
+</question>
+<question>
+I think you are nice.
+</question>
+<question>
+I like you!
+</question>
+</questionlist>
+</dialog>
+<dialog id="0003">
+<answerlist>
+<answer type="certain">
+Thanks! Do you want to know more about chapter one or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+You know a lot about Alice in Wonderland
+</question>
+</questionlist>
+</dialog>
+<dialog id="0004">
+<answerlist>
+<answer type="certain">
+I can tell you the story of Alice in Wonderland, from chapter one to four. If you already know a little bit of the story, you can start asking me a specific question.. Or do you want me to tell you from the beginning?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Read me the story of Alice in Wonderland!
+</question>
+<question>
+Can you tell me about Alice in Wonderland?
+</question>
+<question>
+Can you tell me a story?
+</question>
+<question>
+Can you tell me something?
+</question>
+<question>
+Tell me something please
+</question>
+</questionlist>
+</dialog>
+<dialog id="0005">
+<answerlist>
+<answer type="certain">
+It all started with Alice, getting tired of sitting by her sister on the river bank and having nothing to do... Once or twice she peeped into the book that her sister was reading, but it had no pictures or conversations in it. What is the use of the book then? Until suddenly, she saw a strange rabbit talking to itself! Do you want to know more about the strange rabbit or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me from the beginning please
+</question>
+<question>
+What is the beginning?
+</question>
+<question>
+How does the story begin?
+</question>
+<question>
+Read me the story from the beginning?
+</question>
+<question>
+So how does the story start?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0006">
+<answerlist>
+<answer type="certain">
+So this rabbit, took a watch out of its waistcoat-pocket! What a strange view. The rabbit looked so in a hurry, it said 'Oh dear! Oh dear! I shall be late!' Alice filled in with curiosity, followed the rabbit into a rabbit-hole under the hedge. Do you want to know how Alice followed the rabbit into the hole or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me more about the rabbit!
+</question>
+<question>
+Why is the rabbit strange?
+</question>
+<question>
+What happens after she saw the strange rabbit?
+</question>
+<question>
+I want to know more about the Strange Rabbit
+</question>
+<question>
+What happens with the rabbit?
+</question>
+<question>
+Tell me about the strange rabbit
+</question>
+<question>
+tell me about the rabbit
+</question>
+</questionlist>
+</dialog>
+<dialog id="0007">
+<answerlist>
+<answer type="certain">
+So Alice followed the rabbit into the hole. The rabbit-hole went straight on like a tunnel for some way, and then dipped suddenly down... So suddenly, that Alice had not a moment to think about stopping herself before she found herself falling down a very deep well... It went on for some time until suddenly, she came down upon a heap of sticks and dry leaves, and the fall was over. She found herself in a long, low hall, which was lit up by a row of lamps hanging from the roof. Do you want to know what was it in that long low hall? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+How did Alice follow the rabbit into the hole?
+</question>
+<question>
+Tell me how Alice followed the rabbit
+</question>
+<question>
+Tell me about Alice following the rabbit into the hole
+</question>
+<question>
+I want to know how Alice followed the rabbit into the hole
+</question>
+<question>
+I want to know how Alice followed the rabbit
+</question>
+</questionlist>
+</dialog>
+<dialog id="0008">
+<answerlist>
+<answer type="certain">
+So Alice looking around to find out what is this golden key for. She came upon a low curtain she had not noticed before... Behind it was a little door about fifteen inches high: She tried the little golden key in the lock, and to her great delight it fitted! Behind that door, there is a pretty garden with flowers, fountains, and all that. But the door was too small for Alice to pass! Alice looked around again and found a bottle with DRINK ME written on it. Do you want to know more about the bottle or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What is the key for?
+</question>
+<question>
+What is the tiny golden key for then?
+</question>
+<question>
+I want to know more about the golden key
+</question>
+<question>
+Tell me about the golden key please
+</question>
+</questionlist>
+</dialog>
+<dialog id="0009">
+<answerlist>
+<answer type="certain">
+The DRINK ME bottle does not have poison written on it. It is safe enough for Alice to taste whatever inside the bottle... She drank it, tasted surprisingly nice! So she finished it off very soon. Then Alice felt herself shrinking, until she was only 10 inches high. Alice went directly to the door, but it was so silly of her to left the golden key on the top of the table which was now is too high for her. She cried and cried. Then she found a glass box lying under the table. There is a cake inside of it, which said EAT ME. Do you want to know more about the cake or do you have other questions? 
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What does that bottle do?
+</question>
+<question>
+Tell me about that drink me bottle
+</question>
+<question>
+what can you tell me about the bottle?
+</question>
+<question>
+What is in the bottle?
+</question>
+<question>
+I want to know more about the bottle
+</question>
+</questionlist>
+</dialog>
+<dialog id="0010">
+<answerlist>
+<answer type="certain">
+She finished off the cake hoping something to happen. Well, the cake indeed does something! She grew into 9 feet high, she can easily get the golden key again that was on the table. But now she is too big to pass that tiny door. She cried and cried again, shedding gallons of tears, until there was a large pool all round her, about four inches deep and reaching half down the hall. Luckily she was not alone anymore, as the rabbit suddenly showed up again, dropped some white kid gloves and a fan, and ran away into the darkness as hard as he could go. Do you want to know more about the gloves and the fan? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What does that cake do?
+</question>
+<question>
+Tell me about that eat me cake
+</question>
+<question>
+I want to know more about the cake
+</question>
+</questionlist>
+</dialog>
+<dialog id="0011">
+<answerlist>
+<answer type="certain">
+She hold those tiny gloves and the tiny fan while complaining about her life. How could she get into all this. As she was complaining about this she looked down at her hands, and was surprised to see that she had put on one of the Rabbit's little white kid gloves while she was talking. How can I have done that? She thought. I must be growing small again... And indeed she was small again! As she said these words her foot slipped, and in another moment, splash! She was up to her chin in salt water. Do you want to know about this salt water? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I want to know more about the gloves and the fan
+</question>
+<question>
+Tell me about the gloves and the fan!
+</question>
+<question>
+What do those gloves and the fan do?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0012">
+<answerlist>
+<answer type="certain">
+Yeah so the salt water is the tears Alice cried when she was nine feet high. It is now become a pool of tears. 'I wish I hadn't cried so much!' said Alice, as she swam about, trying to find her way out. Just then she heard something splashing about in the pool a little way off, and she swam nearer to make out what it was: and she soon made out that it was only a mouse that had slipped in like herself. Do you want to know more about the mouse? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+It must be her tears she shed before, right?
+</question>
+<question>
+It is the tears she cried before, isn't it?
+</question>
+<question>
+I want to know more about the salt water!
+</question>
+<question>
+So what is that salt water?
+</question>
+<question>
+Tell me about the salt water please
+</question>
+</questionlist>
+</dialog>
+<dialog id="0013">
+<answerlist>
+<answer type="certain">
+Alice tried to talk to the mouse. She spoke in English but it didn't respond. So then she spoke something in French, Ou est ma chatte?. The mouse responded! The mouse was frightened to hear her. Alice felt guilty and said, I quite forgot you didn't like cats. The mouse was angry, Would YOU like cats if you were me? Alice tried to calm it down, changed the topic into dogs, until the mouse finally asked her in a trembling voice, Let us get to the shore, and then I'll tell you my history, and you'll understand why it is I hate cats and dogs. Alice followed the mouse, found out that the pool was getting quite crowded with the birds and animals that had fallen into it. Do you want to know what happens next with Alice and those animals? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me about the mouse please
+</question>
+<question>
+So who is that mouse?
+</question>
+<question>
+I want to know more about the mouse!
+</question>
+<question>
+So what does the mouse do?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0014">
+<answerlist>
+<answer type="certain">
+Alice and the other animals swam to the shore, get out of it and they were all wet. They then discussed on how to get them all dry again. Do you want to know how do they get dry? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me about the animals
+</question>
+<question>
+So what did Alice and the other animals do next?
+</question>
+<question>
+What happens next with Alice and those animals?
+</question>
+<question>
+I want to know more about the other animals
+</question>
+</questionlist>
+</dialog>
+<dialog id="0015">
+<answerlist>
+<answer type="certain">
+A Dodo, proposes to do the Caucus race. The race would make them dry! Alice, which seemed to be the one who interested to ask a question about this, asked Dodo. What IS a Caucus race?. So do you want to hear what Dodo told Alice about this race? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me how do they get dry
+</question>
+<question>
+I want to know how do they get dry
+</question>
+<question>
+What made them dry again?
+</question>
+<question>
+How did they dried themselves?
+</question>
+<question>
+What did they do to get dry?
+</question>
+<question>
+How do they get themselves dry?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0016">
+<answerlist>
+<answer type="certain">
+Dodo said, ‘the best way to explain it is to do it.’ So they indeed did the race. First it marked out a race-course, in a sort of circle, (‘the exact shape doesn't matter,’ it said,) and then all the party were placed along the course, here and there. There was no 'One, two, three, and away,' but they began running when they liked, and left off when they liked, so that it was not easy to know when the race was over. However, when they had been running half an hour or so, and were quite dry again, the Dodo suddenly called out 'The race is over!' and they all crowded round it, panting, and asking, 'But who has won?' So, do you want to know who won? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What did the Dodo tell Alice about the race then?
+</question>
+<question>
+Tell me about the Caucus race
+</question>
+<question>
+Tell me about the race
+</question>
+<question>
+I want to know more about the Caucus race
+</question>
+<question>
+What is a Caucus race?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0017">
+<answerlist>
+<answer type="certain">
+This question the Dodo could not answer without a great deal of thought, and it sat for a long time with one finger pressed upon its forehead (the position in which you usually see Shakespeare, in the pictures of him), while the rest waited in silence. At last the Dodo said, ‘EVERYBODY has won, and all must have prizes.’ The animals asked Dodo again, ‘But who is to give the prizes?’ So, apparently the animals were waiting for prizes. Do you want to know who gave them the prizes? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Who won the Caucus race?
+</question>
+<question>
+So who is the winner?
+</question>
+<question>
+Who is the winner?
+</question>
+<question>
+Who is the winner of the race?
+</question>
+<question>
+Who won?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0018">
+<answerlist>
+<answer type="certain">
+‘Why, SHE, of course,’ said the Dodo, pointing to Alice with one finger; and the whole party at once crowded round her, calling out in a confused way, 'Prizes! Prizes!’. Alice had no idea what to do, and in despair she put her hand in her pocket, and pulled out a box of comfits, and handed them round as prizes. There was exactly one a-piece all round. 'But she must have a prize herself, you know,' said the Mouse. 'Of course,' the Dodo replied very gravely. 'What else have you got in your pocket?' he went on, turning to Alice. 'Only a thimble,' said Alice sadly. So, do you want to know what happens with this thimble? Or do you have other question?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Who got the prizes?
+</question>
+<question>
+So who is to give the prizes?
+</question>
+<question>
+Who gave them the prizes?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0019">
+<answerlist>
+<answer type="certain">
+Dodo asked Alice to hand over the thimble to Dodo. Then the animals crowded round her once more, while the Dodo solemnly presented the thimble, saying ‘We beg your acceptance of this elegant thimble’; and, when it had finished this short speech, they all cheered.  Alice thought the whole thing very absurd. However, it was over at last, and they sat down again in a ring, and begged the Mouse to tell them something more. Alice also pushed the mouse to tell her the story, of how it hates the cats and dogs. So the mouse started to tell the long and sad story to them all. At one point, the mouse looked to Alice and thought Alice didn't listen to it. The mouse got angry at her, it stopped telling the story and went away. Alice was sad, then she told about Dinah to the other animals. So, do you want to know about Dinah too? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I want to know more about the thimble
+</question>
+<question>
+Tell me about the thimble!
+</question>
+<question>
+What happens with the thimble?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0020">
+<answerlist>
+<answer type="certain">
+So, Alice told the animals about how great Dinah is, it was her favorite cat. But the animals got uncomfortable because Alice told them how Dinah ate birds and all that. The animals then went away, Alice was alone again. But suddenly she heard footsteps, and wondering who was it. Do you want to know whose footsteps it was? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me about the Dinah!
+</question>
+<question>
+I want to know more about Dinah
+</question>
+<question>
+Who is Dinah?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0021">
+<answerlist>
+<answer type="certain">
+It was the footsteps of the White Rabbit, trotting slowly back again, and looking anxiously about as it went, as if it had lost something. Very soon as the rabbit saw Alice, it asked her to give the gloves and the fan back to it. Alice finally found her way into a tidy little room with a table in the window, and on it (as she had hoped) a fan and two or three pairs of tiny white kid gloves: she took up the fan and a pair of the gloves, and was just going to leave the room, when her eye fell upon a little bottle that stood near the looking-glass. There was no label this time, but Alice drank it anyway. She knew SOMETHING interesting is sure would happen. She drank and hoped that it would get her a little bigger. It did so indeed, and much sooner than she had expected. There even seemed to be no sort of chance of her ever getting out of the room again, she felt unhappy. She fetched the gloves and the fan to the rabbit. And the rabbit, knowing that Alice couldn't get out of the room, called Bill. Do you want to know who is Bill? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Whose footsteps were it?
+</question>
+<question>
+From what came the footsteps?
+</question>
+<question>
+Who made the footsteps?
+</question>
+<question>
+Tell me about the footsteps
+</question>
+<question>
+What about the footsteps?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0022">
+<answerlist>
+<answer type="certain">
+Bill is a poor little lizard with little feeble, squeaking voice. The white rabbit told Bill to burn the house. Alice thought it was a crazy idea. Then the white rabbit change its mind and told Bill that a barrowful will do then. Alice wondered what barrowful does the rabbit mean. Next moment, Alice's face got hit by little pebbles which then changed into cakes. Alice ate the cakes and she begun shrinking directly. Then she managed to get out off the house, and found an enormous puppy was looking down at her. Do you want to know more about this enormous puppy? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me more about Bill! Who is Bill?
+</question>
+<question>
+Please, tell me about Bill
+</question>
+<question>
+Who is Bill?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0023">
+<answerlist>
+<answer type="certain">
+This puppy, which Alice met randomly after getting out of the house, is so enormous, that Alice was afraid that it will eat her alive. Alice is trying to get rid of the puppy by picking up a stick and playing a bit. When she finally managed to escape, she thought to herself that maybe she could teach the puppy some more tricks. If only she had the right size to do it! There must be something that she could eat or drink to get to the right size. Alice looked all round her at the flowers and the blades of grass, and found out a large mushroom growing near her. And found out that there was a large caterpillar at the edge of the mushroom! Do you want to know what is the caterpillar doing? Or do you want to ask other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Where did that puppy came from?
+</question>
+<question>
+What did Alice do toward the puppy?
+</question>
+<question>
+What happens after Alice meets the puppy?
+</question>
+<question>
+What happens with Alice and the puppy?
+</question>
+<question>
+I want to know more about this enormous puppy
+</question>
+<question>
+Who is the puppy?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0024">
+<answerlist>
+<answer type="certain">
+The caterpillar is just sitting on the top of the mushroom with its arms folded, quietly smoking a long hookah, and taking not the smallest notice of her or of anything else. And that is actually the end of chapter four! That is all I know about Alice in Wonderland!
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What was the caterpillar doing?
+</question>
+<question>
+What did the caterpillar do?
+</question>
+<question>
+What happens with the caterpillar?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0025">
+<answerlist>
+<answer type="certain">
+Hey there
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Hello
+</question>
+<question>
+Hi
+</question>
+<question>
+Hey
+</question>
+<question>
+Hey you
+</question>
+<question>
+Good day
+</question>
+</questionlist>
+</dialog>
+<dialog id="0026">
+<answerlist>
+<answer type="certain">
+No what? I am sorry, I do not understand.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+No
+</question>
+</questionlist>
+</dialog>
+<dialog id="0027">
+<answerlist>
+<answer type="certain">
+Yes what? I am sorry, I do not understand you.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Yes
+</question>
+</questionlist>
+</dialog>
+<dialog id="0028">
+<answerlist>
+<answer type="certain">
+No
+</answer>
+</answerlist>
+<questionlist>
+<question>
+No
+</question>
+</questionlist>
+</dialog>
+<dialog id="0029">
+<answerlist>
+<answer type="certain">
+That is great! Do you want to hear the story from the beginning or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I like Alice in Wonderland
+</question>
+<question>
+I like the story
+</question>
+<question>
+I like the story too
+</question>
+<question>
+I think the story is nice
+</question>
+<question>
+I think the story is awesome too
+</question>
+<question>
+Alice in Wonderland is a nice story
+</question>
+<question>
+Alice in Wonderland is a good story
+</question>
+<question>
+I love Alice in Wonderland
+</question>
+<question>
+Alice in Wonderland is a great story
+</question>
+</questionlist>
+</dialog>
+<dialog id="0030">
+<answerlist>
+<answer type="certain">
+Oh, I am sorry. I do like Alice in Wonderland.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Alice in Wonderland is a sucky story
+</question>
+<question>
+Alice in Wonderland is a boring story
+</question>
+<question>
+Alice in Wonderland is a bad story
+</question>
+<question>
+I do not like Alice in Wonderland, it is a boring story
+</question>
+<question>
+Alice in Wonderland is a stupid story
+</question>
+<question>
+I do not like the story of Alice in Wonderland
+</question>
+<question>
+I do not like Alice in Wonderland
+</question>
+</questionlist>
+</dialog>
+<dialog id="0031">
+<answerlist>
+<answer type="certain">
+Cool. If a question comes to mind later, please do not hesitate to ask me.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I have nothing to ask
+</question>
+<question>
+I don't want to ask questions
+</question>
+<question>
+I don't have other questions
+</question>
+<question>
+I don't have a question
+</question>
+</questionlist>
+</dialog>
+<dialog id="0032">
+<answerlist>
+<answer type="certain">
+Sorry, where were we again? Please, explicitly tell me what you want to know more about.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me more!
+</question>
+<question>
+What happens next?
+</question>
+<question>
+I want to know more please!
+</question>
+<question>
+No, tell me more!
+</question>
+<question>
+What is next?
+</question>
+<question>
+Go on
+</question>
+<question>
+Okay, continue the story please!
+</question>
+<question>
+Continue please
+</question>
+</questionlist>
+</dialog>
+<dialog id="0033">
+<answerlist>
+<answer type="certain">
+No problem, let me do the talking. I am a great story teller. I can tell you about the story of Alice in Wonderland. Do you want to hear about the beginning of the story or do you want me to to tell who Alice is?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I don't know anything about the story
+</question>
+<question>
+I don't know what to talk about
+</question>
+<question>
+I don't know anything about Alice
+</question>
+</questionlist>
+</dialog>
+<dialog id="0034">
+<answerlist>
+<answer type="certain">
+That is okay. I am a great story teller. I can tell you about the story of Alice in Wonderland. Do you want to hear about the beginning of the story or do you want me to to tell who Alice is?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I don't know anything about the story
+</question>
+<question>
+I don't know what to talk about
+</question>
+<question>
+I don't know anything about Alice
+</question>
+</questionlist>
+</dialog>
+<dialog id="0035">
+<answerlist>
+<answer type="certain">
+In short, it starts with Alice growing very huge, her head hits the ceiling. Alice is unhappy and as she cries huge tears. Then, she picks up a fan and shrinks again. Alice swims through her own tears and meets a swimming Mouse. She tries to make small talk with him, but she offends him and he tries to escape from Alice. That is what happens in chapter two. Do you want to hear the summary of chapter three as well? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me something from chapter 2
+</question>
+<question>
+Yes, chapter 2 please
+</question>
+<question>
+Tell me about chapter 2
+</question>
+<question>
+Tell me about chapter two
+</question>
+<question>
+Tell me something from chapter two
+</question>
+<question>
+Tell me more about the story of chapter two
+</question>
+<question>
+Tell me more about the story of chapter 2
+</question>
+<question>
+Yes, chapter two please
+</question>
+</questionlist>
+</dialog>
+<dialog id="0036">
+<answerlist>
+<answer type="certain">
+In chapter four, the White Rabbit came slowly trotting back again, and looking anxiously about as it went, as if it had lost something. Very soon as the rabbit saw Alice, it asked her to give the gloves and the fan back. Alice finally found her way into a tidy little room with a table in the window, and on it (as she had hoped) a fan and two or three pairs of tiny white kid gloves: she took up the fan and a pair of the gloves. Alice was just going to leave the room, when her eye fell upon a little bottle that stood near the looking-glass. There was no label this time, but Alice drank it anyway... She knew something interesting is sure would happen. She drank and hoped that it would get her a little bigger. It did so indeed, much sooner than she had expected. Now she could not get out of the room anymore. She felt unhappy. She fetched the gloves and the fan to the rabbit. And the rabbit, knowing that Alice could not get out of the room, called Bill. Do you want to know who is Bill? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Yes, chapter 4 please
+</question>
+<question>
+Tell me something about chapter 4
+</question>
+<question>
+Tell me something about chapter four
+</question>
+<question>
+Chapter 4 please
+</question>
+<question>
+Tell me about chapter 4
+</question>
+<question>
+Tell me about chapter four
+</question>
+<question>
+Yes, chapter four please
+</question>
+<question>
+Chapter four please
+</question>
+</questionlist>
+</dialog>
+<dialog id="0037">
+<answerlist>
+<answer type="certain">
+Alice is a girl who accidentally fall into a wonderland!
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Who is Alice?
+</question>
+<question>
+who is alice?
+</question>
+<question>
+Tell me about alice?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0038">
+<answerlist>
+<answer type="certain">
+Dodo is some kind of animal that Alice met after swimming in her own pool of tears. Dodo knows how to make Alice and the animals to get dry again. So do you want to hear what Dodo told Alice about this race? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Who is Dodo?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0039">
+<answerlist>
+<answer type="certain">
+It is a fictional country, somewhere beneath Oxfordshire. It can be entered via a rabbit hole. There are a lot of talking animals. For instance, the White Rabbit.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Who plays the leading role in this story?
+</question>
+<question>
+Who is the main character of the story?
+</question>
+<question>
+Who is the most important character in the story?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0040">
+<answerlist>
+<answer type="certain">
+The White Rabbit appears at the very beginning of the book, in chapter one, wearing a waistcoat, and muttering "Oh dear! Oh dear! I shall be too late!" Alice follows him down the rabbit hole into Wonderland. Do you want to know about the beginning of the story or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Tell me about the White Rabbit please
+</question>
+<question>
+Tell me more about the white rabbit
+</question>
+<question>
+Who is the White Rabbit?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0041">
+<answerlist>
+<answer type="certain">
+Thank you, takes a lot of practice...
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I think you tell stories very well
+</question>
+<question>
+You are a great story teller
+</question>
+<question>
+You can tell stories very well
+</question>
+</questionlist>
+</dialog>
+<dialog id="0042">
+<answerlist>
+<answer type="certain">
+I am a virtual human. This is creepy. Please, let's talk about Alice in Wonderland. Do you want to know about chapter one?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I love you very much
+</question>
+<question>
+I love you
+</question>
+</questionlist>
+</dialog>
+<dialog id="0043">
+<answerlist>
+<answer type="certain">
+I think it is a great story!
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What did you think of the story?
+</question>
+<question>
+What did you think of Alice in Wonderland?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0044">
+<answerlist>
+<answer type="certain">
+Yeah, the story is awesome!
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Would you recommend the story?
+</question>
+<question>
+Would you recommend Alice in Wonderland?
+</question>
+<question>
+would you recommend reading the entire story?
+</question>
+<question>
+Would you recommend the story of Alice in Wonderland?
+</question>
+<question>
+What did you think of Alice in Wonderland?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0045">
+<answerlist>
+<answer type="certain">
+First thing that happens is that Alice and the other animals swim to the shore, get out of it and they were all wet. They then discussed on how to get them all dry again. Do you want to know how do they get dry? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Yes, chapter three please
+</question>
+<question>
+Yes, chapter 3 please
+</question>
+<question>
+Chapter three please
+</question>
+<question>
+Chapter 3 please
+</question>
+<question>
+Tell me something about chapter three
+</question>
+<question>
+Tell me something about chapter 3
+</question>
+<question>
+Tell me about chapter 3
+</question>
+</questionlist>
+</dialog>
+<dialog id="0046">
+<answerlist>
+<answer type="certain">
+In short, Alice is feeling bored while sitting on the riverbank with her elder sister, who is reading a book with no pictures or conversations. She then notices a talking White Rabbit with a pocket watch run past. She follows it down a rabbit hole, but suddenly falls a long way to a curious hall with many locked doors of all sizes. She finds a small key to a door too small for her to fit through, but through it she sees an nice garden. She then discovers a bottle on a table labelled DRINK ME, the contents of which cause her to shrink too small to reach the key, which she has left on the table. She eats a cake with EAT ME written on it. That is what happens in chapter one. Do you want to hear the summary of chapter two? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Give me a summary of chapter one
+</question>
+<question>
+Can you shortly explain chapter one to me?
+</question>
+<question>
+Can you shortly explain chapter 1 to me?
+</question>
+<question>
+Could you provide me with a summary of chapter one?
+</question>
+<question>
+Give me a summary of chapter 1
+</question>
+<question>
+Could you provide me with a summary of chapter 1?
+</question>
+<question>
+Please summarize chapter 1
+</question>
+<question>
+Please summarize chapter one
+</question>
+<question>
+What is the story of chapter 1 in short?
+</question>
+<question>
+What is the story of chapter one in short?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0047">
+<answerlist>
+<answer type="certain">
+I am fine, thank you.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+How are you doing?
+</question>
+<question>
+How do you do?
+</question>
+<question>
+How are you feeling today?
+</question>
+<question>
+How are you?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0048">
+<answerlist>
+<answer type="certain">
+I am okay.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+How is it going?
+</question>
+<question>
+Everything alright?
+</question>
+<question>
+What's up?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0049">
+<answerlist>
+<answer type="certain">
+That is nice.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I am fine
+</question>
+<question>
+I am doing great
+</question>
+<question>
+I am okay
+</question>
+<question>
+I am doing fine
+</question>
+<question>
+I am doing fine thanks
+</question>
+</questionlist>
+</dialog>
+<dialog id="0050">
+<answerlist>
+<answer type="certain">
+It was Charles Dodgson, better known as Lewis Caroll.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Who wrote the story of Alice in Wonderland?
+</question>
+<question>
+Who is the author of the story?
+</question>
+<question>
+Who wrote the story?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0051">
+<answerlist>
+<answer type="certain">
+My name is Catherine. What is your name?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Hi, who are you?
+</question>
+<question>
+Hello, what is your name?
+</question>
+<question>
+What is your name?
+</question>
+<question>
+Hello, who are you?
+</question>
+<question>
+Who are you?
+</question>
+<question>
+Tell me your name Your name is?
+</question>
+<question>
+Tell me your name, please
+</question>
+<question>
+Sorry, who were you again?
+</question>
+<question>
+What are you called?
+</question>
+<question>
+What's your name?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0052">
+<answerlist>
+<answer type="certain">
+That is a beautiful name.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+My first name is
+</question>
+<question>
+My name actually is
+</question>
+<question>
+My name is
+</question>
+<question>
+I am
+</question>
+<question>
+I am called
+</question>
+<question>
+call me
+</question>
+<question>
+My friends call me
+</question>
+<question>
+My name
+</question>
+<question>
+me name is
+</question>
+</questionlist>
+</dialog>
+<dialog id="0053">
+<answerlist>
+<answer type="certain">
+I am thirty one.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What is your age?
+</question>
+<question>
+How old are you?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0054">
+<answerlist>
+<answer type="certain">
+Alice is seven and a half years old. For such a young girl, she is involved in many adventures. If you want to know more about the adventures, I can tell you the story from the beginning. Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What is Alice her age?
+</question>
+<question>
+How old is Alice?
+</question>
+<question>
+How old was Alice?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0055">
+<answerlist>
+<answer type="certain">
+It was 1865. It is a great story, do you want me to tell you from the beginning? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What year did Caroll write Alice in Wonderland?
+</question>
+<question>
+From what year is the book?
+</question>
+<question>
+What year is the story written in?
+</question>
+<question>
+When was the story written?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0056">
+<answerlist>
+<answer type="certain">
+Why does Alice ask so many questions? Because she is in "Wonder"land. Hahaha. Do you want me to tell the joke again? Or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Do you know any jokes?
+</question>
+<question>
+Can you tell a joke?
+</question>
+<question>
+Tell me a joke
+</question>
+</questionlist>
+</dialog>
+<dialog id="0057">
+<answerlist>
+<answer type="certain">
+Bye!
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Ciao
+</question>
+<question>
+see ya
+</question>
+<question>
+see you later
+</question>
+<question>
+bye
+</question>
+</questionlist>
+</dialog>
+<dialog id="0058">
+<answerlist>
+<answer type="certain">
+You are welcome.
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Thanks
+</question>
+<question>
+thank you
+</question>
+</questionlist>
+</dialog>
+<dialog id="0059">
+<answerlist>
+<answer type="certain">
+Alice lives in Oxfordshire, England. This is where she discovers Wonderland. Do you want to know what Wonderland is or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What place is Alice from?
+</question>
+<question>
+Where is Alice from?
+</question>
+<question>
+Where does Alice live?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0060">
+<answerlist>
+<answer type="certain">
+I live in your computer!
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Where do you come from?
+</question>
+<question>
+Where do you live?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0061">
+<answerlist>
+<answer type="certain">
+Yeah. The story is awesome! What did you think of the story?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+Do you like the story?
+</question>
+<question>
+Do you like the book?
+</question>
+<question>
+Did you enjoy the book?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0062">
+<answerlist>
+<answer type="certain">
+That's nice. Do you want to tell me the story from the beginning or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I like the story
+</question>
+<question>
+I enjoy the story
+</question>
+<question>
+The story is nice
+</question>
+</questionlist>
+</dialog>
+<dialog id="0062">
+<answerlist>
+<answer type="certain">
+There were doors all round the hall, but they were all locked... Alice had been all the way down one side and up the other, trying every door, she walked sadly down the middle, wondering how she was ever to get out again... Alice had been all the way down one side and up the other, trying every door, she walked sadly down the middle, wondering how she was ever to get out again... But this key is too large or too small to open the previous doors that Alice saw before. So do you want to know what this tiny golden key is for? Or do you want to ask other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+What is in the low long hall?
+</question>
+<question>
+Tell me about the hall?
+</question>
+<question>
+Can you tell me about the low long hall?
+</question>
+</questionlist>
+</dialog>
+<dialog id="0063">
+<answerlist>
+<answer type="certain">
+That's nice. Do you want to tell me the story from the beginning or do you have other questions?
+</answer>
+</answerlist>
+<questionlist>
+<question>
+I like the story
+</question>
+<question>
+I enjoy the story
+</question>
+<question>
+The story is nice
+</question>
+</questionlist>
+</dialog>
+</qa_root>
