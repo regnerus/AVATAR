@@ -1,32 +1,23 @@
 package nl.utwente.hmi.avatar.input;
 
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-
-import javax.swing.*;
-
-import java.awt.*;
-import java.awt.event.*;
-import javax.sound.sampled.*;
-
+import ee.ioc.phon.netspeechapi.duplex.RecognitionEvent;
+import ee.ioc.phon.netspeechapi.duplex.RecognitionEventListener;
+import ee.ioc.phon.netspeechapi.duplex.WsDuplexRecognitionSession;
+import org.java_websocket.client.WebSocketClient;
+import org.java_websocket.handshake.ServerHandshake;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 
+import javax.sound.sampled.*;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
-
-import org.java_websocket.client.WebSocketClient;
-import org.java_websocket.handshake.ServerHandshake;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 interface WorkerCountInterface
 {
@@ -79,7 +70,7 @@ class WorkerCountClient extends WebSocketClient
 
 }
 
-public class SpeechAPI
+public class SpeechAPI extends Input
 {
     private static final long serialVersionUID = 1L;
 
@@ -99,7 +90,7 @@ public class SpeechAPI
     static class RecognitionEventAccumulator implements RecognitionEventListener, WorkerCountInterface
     {
 
-        private List<RecognitionEvent> events = new ArrayList<RecognitionEvent>();
+        private List<RecognitionEvent> events = new ArrayList<>();
         private boolean closed = false;
 
         public void notifyWorkerCount(int count)
@@ -181,9 +172,6 @@ public class SpeechAPI
         }
     }
 
-    /**
-     * Start a new game with players and an empty bag.
-     */
     public SpeechAPI(String language, RecognitionEventListener rel) {
 
         if(language == "EN") {
