@@ -1,89 +1,85 @@
 package nl.utwente.hmi.avatar.input;
 
-import io.socket.IOAcknowledge;
-import io.socket.IOCallback;
-import io.socket.SocketIO;
-import io.socket.SocketIOException;
-import org.json.JSONException;
-import org.json.JSONObject;
+import org.java_websocket.client.WebSocketClient;
+import org.java_websocket.drafts.Draft_17;
+import org.java_websocket.handshake.ServerHandshake;
 
-import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class Input {
     private static Input input;
-    public static InputListener listener;
+    private static WebSocketClient client;
 
-    private static SocketIO socket;
 
-    public Input() {
+    public Input( ) {
 
     }
 
-    public Input(String socketIP, int socketPort) {
-        try {
-            socket = new SocketIO("http://127.0.0.1:3001/");
+//    public static void main(String[] args){
+////        input = new WOz("EN", "130.89.227.191", 61613);
+//    }
 
-            socket.connect(new IOCallback() {
-                @Override
-                public void onMessage(JSONObject json, IOAcknowledge ack) {
-                    try {
-                        System.out.println("Server said:" + json.toString(2));
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
+    public static void main( String[] args ) throws URISyntaxException {
+//        input = new WOz("EN"); // more about drafts here: http://github.com/TooTallNate/Java-WebSocket/wiki/Drafts
+//        client.connect();
+        input = new Speech();
 
-                @Override
-                public void onMessage(String data, IOAcknowledge ack) {
-                    System.out.println("Server said: " + data);
-                }
+        connectClient();
 
-                @Override
-                public void onError(SocketIOException socketIOException) {
-                    System.out.println("an Error occured");
-                    socketIOException.printStackTrace();
-                }
-
-                @Override
-                public void onDisconnect() {
-                    System.out.println("Connection terminated.");
-                }
-
-                @Override
-                public void onConnect() {
-                    System.out.println("Connection established");
-                }
-
-                @Override
-                public void on(String event, IOAcknowledge ack, Object... args) {
-                    System.out.println("Server triggered event '" + event + "'");
-                }
-            });
-
-            // This line is cached until the connection is establisched.
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
+//        SpeechAPI speech = new SpeechAPI("nlspraak.ewi.utwente.nl:8889", null);
     }
-    public static void main(String[] args){
-        input = new SpeechAPI("nlspraak.ewi.utwente.nl:8889", null);
-//        input = new WOz("EN", "130.89.227.191", 61613);
+
+    public static void connectClient() throws URISyntaxException {
+        // cc = new ChatClient(new URI(uriField.getText()), area, ( Draft ) draft.getSelectedItem() );
+        client = new WebSocketClient( new URI("ws://localhost:8887"), new Draft_17() ) {
+
+            @Override
+            public void onOpen( ServerHandshake handshakedata ) {
+                System.out.println( "opened connection" );
+                // if you plan to refuse connection based on ip or httpfields overload: onWebsocketHandshakeReceivedAsClient
+            }
+
+            @Override
+            public void onMessage( String message ) {
+                System.out.println( "received: " + message );
+            }
+
+
+            @Override
+            public void onClose( int code, String reason, boolean remote ) {
+                // The codecodes are documented in class org.java_websocket.framing.CloseFrame
+                System.out.println( "Connection closed by " + ( remote ? "remote peer" : "us" ) );
+            }
+
+            @Override
+            public void onError( Exception ex ) {
+                ex.printStackTrace();
+                // if the error is fatal then onClose will be called additionally
+            }
+
+        };
+
+
+        client.connect();
     }
 
 
     public static void sendInput(String message, String behaviour) {
-        socket.send(message + ";" + behaviour);
+        client.send(message + ";" + behaviour);
     }
 
     public static void sendInput(String message) {
-        socket.send(message);
+        client.send(message);
     }
 
     public static Input getInput() {
         return input;
     }
+//
+//    public void setListener(InputListener listener) {
+//        this.listener = listener;
+//    }
 
-    public void setListener(InputListener listener) {
-        this.listener = listener;
-    }
+
 }

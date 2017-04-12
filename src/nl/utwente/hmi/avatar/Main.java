@@ -10,6 +10,10 @@ public class Main {
 //        if (method == "speech") {
 //            this.input = new SpeechAPI(language, null);
 //        }
+
+//        SpeechAPI.RecognitionEventAccumulator eventAccumulator = new SpeechAPI.RecognitionEventAccumulator();
+
+        SpeechAPI speech = new SpeechAPI("nlspraak.ewi.utwente.nl:8889", null);
     }
 
 

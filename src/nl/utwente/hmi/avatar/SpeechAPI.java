@@ -1,5 +1,4 @@
-package nl.utwente.hmi.avatar.input;
-
+package nl.utwente.hmi.avatar;
 
 import ee.ioc.phon.netspeechapi.duplex.DuplexRecognitionSession;
 import ee.ioc.phon.netspeechapi.duplex.RecognitionEvent;
@@ -72,7 +71,7 @@ class WorkerCountClient extends WebSocketClient
 }
 
 
-public class SpeechAPI extends Input
+public class SpeechAPI
 {
     private static final long serialVersionUID = 1L;
 
@@ -116,7 +115,7 @@ public class SpeechAPI extends Input
         public void onRecognitionEvent(RecognitionEvent event)
         {
             System.out.println("****** " + event);
-            listener.onInput(event.getResult().toString());
+
             if (event.getStatus() == 10) {
                 System.out.println("****** PINGED" + event);
                 sendPong=true;

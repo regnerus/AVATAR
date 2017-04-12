@@ -1,5 +1,6 @@
 package nl.utwente.hmi.avatar.input;
 
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Objects;
@@ -7,11 +8,19 @@ import java.util.Objects;
 /**
  * Created by Bouke on 12/04/2017.
  */
-public class WOz extends Input {
+public class WOz extends Input{
     private JPanel mainPanel = new JPanel(); // this is what I'll add to contentPane
 
-    public WOz(String language, String socketIP, int socketPort){
-        super(socketIP, socketPort);
+    public WOz() {
+        startGUI("EN");
+    }
+
+    public WOz(String lang) {
+        startGUI(lang);
+    }
+
+    private void startGUI(String language){
+//        super(socketIP, socketPort);
 
         try {
             if(Objects.equals(language, "NL")) {
