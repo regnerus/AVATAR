@@ -9,7 +9,7 @@ import java.net.URLEncoder;
 import java.util.Date;
 import java.util.logging.Logger;
 
-public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler ,InputListener{
+public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler, InputListener{
     private static final Logger LOGGER = Logger.getLogger( DialogueManager.class.getName() );
 
     private static Connection con;
@@ -71,10 +71,10 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
             }
 
             System.out.println("[sendAnswer] "+answer);
-            System.out.println("[sendAnswer] "+appolloTopic);
+            System.out.println("[sendAnswer] "+apolloTopic);
             try{
                 LOGGER.info(answer);
-                con.send(answer, appolloTopic);
+                con.send(answer, apolloTopic);
             } catch(Exception e) {
                 System.out.println("[sendAnswer] "+e);
             }

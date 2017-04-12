@@ -1,5 +1,7 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
+import nl.utwente.hmi.avatar.input.OutputGuiEN;
+import nl.utwente.hmi.avatar.input.OutputGuiNL;
 import pk.aamir.stompj.*;
 
 import javax.swing.*;
@@ -7,10 +9,14 @@ import java.awt.*;
 import java.util.Objects;
 
 @SuppressWarnings("serial")
-public class WOz extends DialogueManager implements ErrorHandler, MessageHandler {
+public class WOz implements ErrorHandler, MessageHandler {
     private JPanel mainPanel = new JPanel(); // this is what I'll add to contentPane
     public static JFrame frame;
     static Connection con;
+
+    static String apolloIP = "130.89.227.191";
+    static int apolloPort = 61613;
+    static String apolloTopic = "/topic/bmlRequests";
 
     public WOz(String language, String appolloIP, int appolloPort){
         String feedbackTopic = "/topic/bmlFeedback";
@@ -54,6 +60,10 @@ public class WOz extends DialogueManager implements ErrorHandler, MessageHandler
                 e.printStackTrace();
             }
         }
+    }
+
+    public static void main(String[] args){
+        WOz woz = new WOz("EN", "130.89.227.191", 61613);
     }
 
 
