@@ -4,7 +4,6 @@ import ee.ioc.phon.netspeechapi.duplex.DuplexRecognitionSession;
 import ee.ioc.phon.netspeechapi.duplex.RecognitionEvent;
 import ee.ioc.phon.netspeechapi.duplex.RecognitionEventListener;
 import ee.ioc.phon.netspeechapi.duplex.WsDuplexRecognitionSession;
-import nl.utwente.hmi.avatar.input.InputListener;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
 import org.json.simple.JSONObject;

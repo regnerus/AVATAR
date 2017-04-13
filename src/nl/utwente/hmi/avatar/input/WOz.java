@@ -1,6 +1,9 @@
 package nl.utwente.hmi.avatar.input;
 
 
+import nl.utwente.hmi.avatar.input.wozOutput.OutputGuiEN;
+import nl.utwente.hmi.avatar.input.wozOutput.OutputGuiNL;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Objects;

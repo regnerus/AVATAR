@@ -1,9 +1,11 @@
-package nl.utwente.hmi.avatar.input;
+package nl.utwente.hmi.avatar.input.wozOutput;
 
 /*
 Code: Merijn Bruijnes
 Date: Feb 2017
 */
+
+import nl.utwente.hmi.avatar.input.Input;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

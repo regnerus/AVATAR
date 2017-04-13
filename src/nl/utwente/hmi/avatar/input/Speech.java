@@ -1,5 +1,6 @@
 package nl.utwente.hmi.avatar.input;
 
+import nl.utwente.hmi.avatar.InputListener;
 import nl.utwente.hmi.avatar.SpeechAPI;
 
 /**
