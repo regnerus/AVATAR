@@ -16,18 +16,11 @@ public class Input {
 
     }
 
-//    public static void main(String[] args){
-////        input = new WOz("EN", "130.89.227.191", 61613);
-//    }
-
     public static void main( String[] args ) throws URISyntaxException {
-//        input = new WOz("EN"); // more about drafts here: http://github.com/TooTallNate/Java-WebSocket/wiki/Drafts
-//        client.connect();
-        input = new Speech();
+        input = new WOz("EN");
+//        input = new Speech();
 
         connectClient();
-
-//        SpeechAPI speech = new SpeechAPI("nlspraak.ewi.utwente.nl:8889", null);
     }
 
     public static void connectClient() throws URISyntaxException {
@@ -76,10 +69,5 @@ public class Input {
     public static Input getInput() {
         return input;
     }
-//
-//    public void setListener(InputListener listener) {
-//        this.listener = listener;
-//    }
-
 
 }
