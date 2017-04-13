@@ -117,10 +117,16 @@ public class SpeechAPI
 
         public void onRecognitionEvent(RecognitionEvent event)
         {
-            System.out.println("****** " + event);
+            String trans = event.getResult().getHypotheses().get(0).getTranscript();
 
-            if(event.getResult().getHypotheses().get(0).getTranscript() != "<unk>.") {
-                listener.onInput(event.getResult().getHypotheses().get(0).getTranscript());
+            System.out.println("COMP " + trans);
+
+            if (event.getResult().isFinal())
+            {
+                listener.onInput(trans);
+            } else
+            {
+//                listener.onInput(trans);
             }
 
             if (event.getStatus() == 10) {
