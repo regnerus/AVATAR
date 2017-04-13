@@ -88,7 +88,7 @@ public class SpeechAPI
     private static String DEFAULT_WS_URL;
     private static String DEFAULT_WS_STATUS_URL;
 
-    public static Main.InputListener listener;
+    public static InputListener listener;
 
     public static class RecognitionEventAccumulator implements RecognitionEventListener, WorkerCountInterface
     {
@@ -216,7 +216,7 @@ public class SpeechAPI
         captureAudio(session);
     }
 
-    public void setListener(Main.InputListener listener) {
+    public void setListener(InputListener listener) {
         this.listener = listener;
     }
 

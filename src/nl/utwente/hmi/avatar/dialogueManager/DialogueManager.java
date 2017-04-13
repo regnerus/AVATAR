@@ -1,6 +1,6 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
-import nl.utwente.hmi.avatar.Main;
+import nl.utwente.hmi.avatar.InputListener;
 import nl.utwente.hmi.avatar.SpeechAPI;
 import org.java_websocket.WebSocket;
 import org.java_websocket.WebSocketImpl;
@@ -23,7 +23,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
-public class DialogueManager extends WebSocketServer implements Main.InputListener {
+public class DialogueManager extends WebSocketServer implements InputListener {
     private static Connection con;
     static String apolloIP = "127.0.0.1";
     static int apolloPort = 61613;
@@ -84,7 +84,7 @@ public class DialogueManager extends WebSocketServer implements Main.InputListen
     }
 
     public void connectSpeech() {
-        speech = new SpeechAPI("nlspraak.ewi.utwente.nl:8889", null);
+        speech = new SpeechAPI("nlspraak.ewi.utwente.nl:8890", null);
         speech.setListener(this);
     }
 
