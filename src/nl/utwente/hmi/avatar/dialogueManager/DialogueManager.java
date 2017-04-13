@@ -1,7 +1,7 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
+import nl.utwente.hmi.avatar.Main;
 import nl.utwente.hmi.avatar.SpeechAPI;
-import nl.utwente.hmi.avatar.input.InputListener;
 import org.java_websocket.WebSocket;
 import org.java_websocket.WebSocketImpl;
 import org.java_websocket.handshake.ClientHandshake;
@@ -23,10 +23,7 @@ import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
-/**
- * A simple WebSocketServer implementation. Keeps track of a "chatroom".
- */
-public class DialogueManager extends WebSocketServer implements InputListener {
+public class DialogueManager extends WebSocketServer implements Main.InputListener {
     private static Connection con;
     static String apolloIP = "127.0.0.1";
     static int apolloPort = 61613;
@@ -46,23 +43,15 @@ public class DialogueManager extends WebSocketServer implements InputListener {
     public DialogueManager( int port ) throws UnknownHostException {
         super( new InetSocketAddress( port ) );
 
-        setupLogger();
+        setupLogger(bmlId);
         connectActiveMQ();
         connectSpeech();
 
     }
 
-    public DialogueManager( InetSocketAddress address ) {
-        super( address );
-
-        setupLogger();
-        connectActiveMQ();
-        connectSpeech();
-    }
-
-    public void setupLogger() {
+    public void setupLogger(long id) {
         try {
-            fh = new FileHandler("logger.log");
+            fh = new FileHandler("logger" + id + ".log");
             fh.setFormatter(formatter);
             LOGGER.addHandler(fh);
 
@@ -81,10 +70,8 @@ public class DialogueManager extends WebSocketServer implements InputListener {
 
         try {
             con = new Connection(apolloIP, apolloPort, "admin", "password");
-//            con.setErrorHandler(this);
             con.connect();
 
-            System.out.println(con);
             System.out.println("Hello World!");
 
         } catch (StompJException e) {
@@ -115,8 +102,8 @@ public class DialogueManager extends WebSocketServer implements InputListener {
                 System.out.println("[sendBml] Encoding failed.");
             }
 
-            System.out.println("[sendAnswer] "+answer);
-            System.out.println("[sendAnswer] "+apolloTopic);
+//            System.out.println("[sendAnswer] "+answer);
+//            System.out.println("[sendAnswer] "+apolloTopic);
             try{
                 con.send(answer, apolloTopic);
             } catch(Exception e) {
@@ -149,13 +136,13 @@ public class DialogueManager extends WebSocketServer implements InputListener {
     @Override
     public void onOpen( WebSocket conn, ClientHandshake handshake ) {
         this.sendToAll( "new connection: " + handshake.getResourceDescriptor() );
-        System.out.println( conn.getRemoteSocketAddress().getAddress().getHostAddress() + " entered the room!" );
+        System.out.println( conn.getRemoteSocketAddress().getAddress().getHostAddress() + " entered!" );
     }
 
     @Override
     public void onClose( WebSocket conn, int code, String reason, boolean remote ) {
-        this.sendToAll( conn + " has left the room!" );
-        System.out.println( conn + " has left the room!" );
+        this.sendToAll( conn + " has left!" );
+        System.out.println( conn + " has left!" );
     }
 
     @Override
@@ -197,7 +184,7 @@ public class DialogueManager extends WebSocketServer implements InputListener {
         }
         DialogueManager s = new DialogueManager( port );
         s.start();
-        System.out.println( "ChatServer started on port: " + s.getPort() );
+        System.out.println( "Server started on port: " + s.getPort() );
 
         BufferedReader sysin = new BufferedReader( new InputStreamReader( System.in ) );
         while ( true ) {

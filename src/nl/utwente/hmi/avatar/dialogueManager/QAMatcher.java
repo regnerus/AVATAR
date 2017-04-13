@@ -1,8 +1,8 @@
 package nl.utwente.hmi.avatar.dialogueManager;
 
+import nl.utwente.hmi.avatar.Main;
 import nl.utwente.hmi.avatar.dialogueManager.qaMatcher.*;
 import pk.aamir.stompj.*;
-import nl.utwente.hmi.avatar.input.*;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -10,7 +10,7 @@ import java.net.UnknownHostException;
 import java.util.Date;
 import java.util.logging.Logger;
 
-public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler, InputListener{
+public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler, Main.InputListener {
     private static final Logger LOGGER = Logger.getLogger( DialogueManager.class.getName() );
 
     private static Connection con;

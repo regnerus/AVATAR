@@ -4,7 +4,6 @@ import ee.ioc.phon.netspeechapi.duplex.DuplexRecognitionSession;
 import ee.ioc.phon.netspeechapi.duplex.RecognitionEvent;
 import ee.ioc.phon.netspeechapi.duplex.RecognitionEventListener;
 import ee.ioc.phon.netspeechapi.duplex.WsDuplexRecognitionSession;
-import nl.utwente.hmi.avatar.input.InputListener;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
 import org.json.simple.JSONObject;
@@ -89,7 +88,7 @@ public class SpeechAPI
     private static String DEFAULT_WS_URL;
     private static String DEFAULT_WS_STATUS_URL;
 
-    public static InputListener listener;
+    public static Main.InputListener listener;
 
     public static class RecognitionEventAccumulator implements RecognitionEventListener, WorkerCountInterface
     {
@@ -217,7 +216,7 @@ public class SpeechAPI
         captureAudio(session);
     }
 
-    public void setListener(InputListener listener) {
+    public void setListener(Main.InputListener listener) {
         this.listener = listener;
     }
 

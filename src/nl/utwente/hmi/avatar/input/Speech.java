@@ -1,11 +1,12 @@
 package nl.utwente.hmi.avatar.input;
 
+import nl.utwente.hmi.avatar.Main;
 import nl.utwente.hmi.avatar.SpeechAPI;
 
 /**
  * Created by Bouke on 12/04/2017.
  */
-public class Speech extends Input implements InputListener {
+public class Speech extends Input implements Main.InputListener {
     public SpeechAPI speech;
 
     public Speech() {
