@@ -6,10 +6,11 @@ import nl.utwente.hmi.avatar.input.*;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.net.UnknownHostException;
 import java.util.Date;
 import java.util.logging.Logger;
 
-public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler ,InputListener{
+public class QAMatcher extends DialogueManager implements ErrorHandler, MessageHandler, InputListener{
     private static final Logger LOGGER = Logger.getLogger( DialogueManager.class.getName() );
 
     private static Connection con;
@@ -22,29 +23,30 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
     static DomDialogsParser ddp = new DomDialogsParser(filename);
     static DialogStore store= ddp.getDialogStore();
 
-    public QAMatcher(String apolloIP, int apolloPort){
+    public QAMatcher(String s, int port) throws UnknownHostException {
+        super(port);
 
-        try {
-            con = new Connection(apolloIP, apolloPort, "admin", "password");
-            con.setErrorHandler(this);
-            con.connect();
-            System.out.println("Connection initialised.");
-        } catch (StompJException e) {
-            System.out.println("Error while initialising STOMP connection: "+e.getMessage());
-            e.printStackTrace();
-            return;
-        }
-
-        try {
-            //topiclistener
-            con.subscribe(inTopic, true);
-            con.addMessageHandler(inTopic, this);
-            System.out.println("Subscriptions done.");
-        } catch (Exception e) {
-            System.out.println("Error while subscribing: "+e.getMessage());
-            e.printStackTrace();
-            return;
-        }
+//        try {
+//            con = new Connection(apolloIP, apolloPort, "admin", "password");
+//            con.setErrorHandler(this);
+//            con.connect();
+//            System.out.println("Connection initialised.");
+//        } catch (StompJException e) {
+//            System.out.println("Error while initialising STOMP connection: "+e.getMessage());
+//            e.printStackTrace();
+//            return;
+//        }
+//
+//        try {
+//            //topiclistener
+//            con.subscribe(inTopic, true);
+//            con.addMessageHandler(inTopic, this);
+//            System.out.println("Subscriptions done.");
+//        } catch (Exception e) {
+//            System.out.println("Error while subscribing: "+e.getMessage());
+//            e.printStackTrace();
+//            return;
+//        }
     }
 
     public static void main(String[] args){
@@ -71,10 +73,10 @@ public class QAMatcher extends DialogueManager implements ErrorHandler, MessageH
             }
 
             System.out.println("[sendAnswer] "+answer);
-            System.out.println("[sendAnswer] "+appolloTopic);
+            System.out.println("[sendAnswer] "+apolloTopic);
             try{
                 LOGGER.info(answer);
-                con.send(answer, appolloTopic);
+                con.send(answer, apolloTopic);
             } catch(Exception e) {
                 System.out.println("[sendAnswer] "+e);
             }

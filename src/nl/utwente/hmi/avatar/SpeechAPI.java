@@ -1,10 +1,10 @@
-package nl.utwente.hmi.avatar.input;
-
+package nl.utwente.hmi.avatar;
 
 import ee.ioc.phon.netspeechapi.duplex.DuplexRecognitionSession;
 import ee.ioc.phon.netspeechapi.duplex.RecognitionEvent;
 import ee.ioc.phon.netspeechapi.duplex.RecognitionEventListener;
 import ee.ioc.phon.netspeechapi.duplex.WsDuplexRecognitionSession;
+import nl.utwente.hmi.avatar.input.InputListener;
 import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
 import org.json.simple.JSONObject;
@@ -72,7 +72,7 @@ class WorkerCountClient extends WebSocketClient
 }
 
 
-public class SpeechAPI extends Input
+public class SpeechAPI
 {
     private static final long serialVersionUID = 1L;
 
@@ -89,7 +89,9 @@ public class SpeechAPI extends Input
     private static String DEFAULT_WS_URL;
     private static String DEFAULT_WS_STATUS_URL;
 
-    static class RecognitionEventAccumulator implements RecognitionEventListener, WorkerCountInterface
+    public static InputListener listener;
+
+    public static class RecognitionEventAccumulator implements RecognitionEventListener, WorkerCountInterface
     {
 
         private List<RecognitionEvent> events = new ArrayList<>();
@@ -116,7 +118,11 @@ public class SpeechAPI extends Input
         public void onRecognitionEvent(RecognitionEvent event)
         {
             System.out.println("****** " + event);
-            listener.onInput(event.getResult().toString());
+
+            if(event.getResult().getHypotheses().get(0).getTranscript() != "<unk>.") {
+                listener.onInput(event.getResult().getHypotheses().get(0).getTranscript());
+            }
+
             if (event.getStatus() == 10) {
                 System.out.println("****** PINGED" + event);
                 sendPong=true;
@@ -203,6 +209,10 @@ public class SpeechAPI extends Input
             System.err.println("Caught Exception: " + e2.getMessage());
         }
         captureAudio(session);
+    }
+
+    public void setListener(InputListener listener) {
+        this.listener = listener;
     }
 
     //This method captures audio input from a microphone and saves it in a ByteArrayOutputStream object.
