@@ -6,6 +6,7 @@ import org.java_websocket.handshake.ServerHandshake;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Objects;
 
 public class Input {
     private static Input input;
@@ -17,8 +18,13 @@ public class Input {
     }
 
     public static void main( String[] args ) throws URISyntaxException {
-        input = new WOz("EN");
-//        input = new Speech();
+        if(Objects.equals(args[0], "NL")) {
+
+            input = new WOz("NL");
+        }else {
+            input = new WOz("EN");
+        }
+
 
         connectClient();
     }
