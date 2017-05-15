@@ -10,7 +10,7 @@ public class Speech extends Input implements InputListener {
     public SpeechAPI speech;
 
     public Speech() {
-        speech = new SpeechAPI("nlspraak.ewi.utwente.nl:8889", null);
+        speech = new SpeechAPI("nlspraak.ewi.utwente.nl:8891", null);
         speech.setListener(this);
     }
 

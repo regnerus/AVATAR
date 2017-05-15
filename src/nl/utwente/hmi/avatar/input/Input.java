@@ -25,7 +25,7 @@ public class Input {
 
     public static void connectClient() throws URISyntaxException {
         // cc = new ChatClient(new URI(uriField.getText()), area, ( Draft ) draft.getSelectedItem() );
-        client = new WebSocketClient( new URI("ws://130.89.229.119:8887"), new Draft_17() ) {
+        client = new WebSocketClient( new URI("ws://130.89.233.163:1337"), new Draft_17() ) {
 
             @Override
             public void onOpen( ServerHandshake handshakedata ) {

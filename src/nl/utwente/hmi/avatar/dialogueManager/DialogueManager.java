@@ -84,7 +84,7 @@ public class DialogueManager extends WebSocketServer implements InputListener {
     }
 
     public void connectSpeech() {
-        speech = new SpeechAPI("nlspraak.ewi.utwente.nl:8890", null);
+        speech = new SpeechAPI("nlspraak.ewi.utwente.nl:8891", null);
         speech.setListener(this);
     }
 
