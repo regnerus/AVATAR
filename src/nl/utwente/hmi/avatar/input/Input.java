@@ -18,11 +18,15 @@ public class Input {
     }
 
     public static void main( String[] args ) throws URISyntaxException {
-        if(Objects.equals(args[0], "NL")) {
 
-            input = new WOz("NL");
+
+        String language =  args[1];
+
+        if(Objects.equals(args[0], "WOZ")) {
+
+            input = new WOz(language);
         }else {
-            input = new WOz("EN");
+            input = new Speech(language);
         }
 
 
