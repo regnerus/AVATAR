@@ -1,0 +1,67 @@
+<FACS2MorphMapping>
+   <Map AU="1"  side="LEFT"  morph="FACS_AU_1_L"  intensity="1.0" /> <!-- Inner brow raiser	Frontalis, pars medialis -->
+   <Map AU="1"  side="RIGHT" morph="FACS_AU_1_R"  intensity="1.0" />
+   <Map AU="2"  side="LEFT"  morph="FACS_AU_2_L"  intensity="1.0" /> <!-- Outer brow raiser	Frontalis, pars lateralis -->
+   <Map AU="2"  side="RIGHT" morph="FACS_AU_2_R"  intensity="1.0" />
+   <Map AU="4"  side="LEFT"  morph="FACS_AU_4_L"  intensity="1.0" /> <!-- Brow lowerer	Corrugator supercilii, Depressor supercilii -->
+   <Map AU="4"  side="RIGHT" morph="FACS_AU_4_R"  intensity="1.0" />
+   <Map AU="5"  side="LEFT"  morph="FACS_AU_5_L"  intensity="1.0" /> <!-- Upper lid raiser	Levator palpebrae superioris -->
+   <Map AU="5"  side="RIGHT" morph="FACS_AU_5_R"  intensity="1.0" />
+   <Map AU="6"  side="LEFT"  morph="FACS_AU_6_L"  intensity="1.0" /> <!-- Cheek raiser	Orbicularis oculi, pars orbitalis -->
+   <Map AU="6"  side="RIGHT" morph="FACS_AU_6_R"  intensity="1.0" />
+   <Map AU="7"  side="LEFT"  morph="FACS_AU_7_L"  intensity="1.0" /> <!-- Lid tightener	Orbicularis oculi, pars palpebralis -->
+   <Map AU="7"  side="RIGHT" morph="FACS_AU_7_R"  intensity="1.0" />
+   <Map AU="9"  side="LEFT"  morph="FACS_AU_9_L"  intensity="1.0" /> <!-- Nose wrinkler	Levator labii superioris alaeque nasi -->
+   <Map AU="9"  side="RIGHT" morph="FACS_AU_9_R"  intensity="1.0" />
+   <Map AU="10" side="LEFT"  morph="FACS_AU_10_L" intensity="1.0" /> <!-- Upper lip raiser	Levator labii superioris -->
+   <Map AU="10" side="RIGHT" morph="FACS_AU_10_R" intensity="1.0" />
+   <Map AU="11" side="NONE"  morph="FACS_AU_11" intensity="1.0" /> <!-- Nasolabial deepener	Zygomaticus minor -->
+   <Map AU="12" side="LEFT"  morph="FACS_AU_12_L" intensity="1.0" /> <!-- Lip corner puller	Zygomaticus major -->
+   <Map AU="12" side="RIGHT" morph="FACS_AU_12_R" intensity="1.0" />
+   <Map AU="13" side="LEFT"  morph="FACS_AU_13_L" intensity="1.0" /> <!-- Cheek puffer	Levator anguli oris (a.k.a. Caninus) -->
+   <Map AU="13" side="RIGHT" morph="FACS_AU_13_R" intensity="1.0" />
+   <Map AU="14" side="LEFT"  morph="FACS_AU_14_L" intensity="1.0" /> <!-- Dimpler	Buccinator -->
+   <Map AU="14" side="RIGHT" morph="FACS_AU_14_R" intensity="1.0" />
+   <Map AU="15" side="LEFT"  morph="FACS_AU_15_L" intensity="1.0" /> <!-- Lip corner depressor	Depressor anguli oris (a.k.a. Triangularis) -->
+   <Map AU="15" side="RIGHT" morph="FACS_AU_15_R" intensity="1.0" />
+   <Map AU="16" side="NONE"  morph="FACS_AU_16" intensity="1.0" /> <!-- Lower lip depressor	Depressor labii inferioris -->
+   <Map AU="17" side="NONE"  morph="FACS_AU_17" intensity="1.0" /> <!-- Chin raiser	Mentalis -->
+   <Map AU="18" side="NONE"  morph="FACS_AU_18" intensity="1.0" /> <!-- Lip puckerer	Incisivii labii superioris and Incisivii labii inferioris -->
+   <Map AU="20" side="LEFT"  morph="FACS_AU_20_L" intensity="1.0" /> <!-- Lip stretcher	Risorius with platysma -->
+   <Map AU="20" side="RIGHT" morph="FACS_AU_20_R" intensity="1.0" />
+   <Map AU="22" side="NONE"  morph="FACS_AU_22" intensity="1.0" /> <!-- Lip funneler	Orbicularis oris -->
+   <Map AU="23" side="NONE"  morph="FACS_AU_23" intensity="1.0" /> <!-- Lip tightener	Orbicularis oris -->
+   <Map AU="24" side="NONE"  morph="FACS_AU_24" intensity="1.0" /> <!-- Lip pressor	Orbicularis oris -->
+   <Map AU="25" side="NONE"  morph="FACS_AU_25" intensity="1.0" /> <!-- Lips part	Depressor labii inferioris or relaxation of Mentalis, or Orbicularis oris -->
+   <Map AU="26" side="NONE"  morph="FACS_AU_26" intensity="1.0" /> <!-- Jaw drop	Masseter, relaxed Temporalis and internal Pterygoid -->
+   <Map AU="27" side="NONE"  morph="FACS_AU_27" intensity="1.0" /> <!-- Mouth stretch	Pterygoids, Digastric -->
+   <Map AU="28" side="NONE"  morph="FACS_AU_28" intensity="1.0" /> <!-- Lip suck	Orbicularis oris -->
+   <Map AU="41" side="LEFT"  morph="FACS_AU_41_L" intensity="1.0" /> <!-- Lid droop	Relaxation of Levator palpebrae superioris -->
+   <Map AU="41" side="RIGHT" morph="FACS_AU_41_R" intensity="1.0" />
+   <Map AU="42" side="LEFT"  morph="FACS_AU_42_L" intensity="1.0" /> <!-- Slit	Orbicularis oculi -->
+   <Map AU="42" side="RIGHT" morph="FACS_AU_42_R" intensity="1.0" />
+   <Map AU="43" side="LEFT"  morph="FACS_AU_43_L" intensity="1.0" /> <!-- Eyes closed	Relaxation of Levator palpebrae superioris; Orbicularis oculi, pars palpebralis -->
+   <Map AU="43" side="RIGHT" morph="FACS_AU_43_R" intensity="1.0" />
+   <Map AU="44" side="LEFT"  morph="FACS_AU_44_L" intensity="1.0" /> <!-- Squint	Orbicularis oculi, pars palpebralis -->
+   <Map AU="44" side="RIGHT" morph="FACS_AU_44_R" intensity="1.0" />
+   <Map AU="45" side="LEFT"  morph="FACS_AU_45_L" intensity="1.0" /> <!-- Blink	Relaxation of Levator palpebrae superioris; Orbicularis oculi, pars palpebralis -->
+   <Map AU="45" side="RIGHT" morph="FACS_AU_45" intensity="1.0" />
+   <Map AU="46" side="LEFT"  morph="FACS_AU_46_L" intensity="1.0" /> <!-- Wink	Relaxation of Levator palpebrae superioris; Orbicularis oculi, pars palpebralis -->
+   <Map AU="46" side="RIGHT" morph="FACS_AU_46_R" intensity="1.0" />
+   <Map AU="51" side="NONE"  morph="FACS_AU_51" intensity="1.0" /> <!-- Head turn left -->
+   <Map AU="52" side="NONE"  morph="FACS_AU_52" intensity="1.0" /> <!-- Head turn right -->
+   <Map AU="53" side="NONE"  morph="FACS_AU_53" intensity="1.0" /> <!-- Head up -->
+   <Map AU="54" side="NONE"  morph="FACS_AU_54" intensity="1.0" /> <!-- Head down -->
+   <Map AU="55" side="NONE"  morph="FACS_AU_55" intensity="1.0" /> <!-- Head tilt left -->
+   <Map AU="56" side="NONE"  morph="FACS_AU_56" intensity="1.0" /> <!-- Head tilt right -->
+   <Map AU="57" side="NONE"  morph="FACS_AU_57" intensity="1.0" /> <!-- Head forward -->
+   <Map AU="58" side="NONE"  morph="FACS_AU_58" intensity="1.0" /> <!-- Head back -->
+   <Map AU="61" side="LEFT"  morph="FACS_AU_61_L" intensity="1.0" /> <!-- Eyes turn left -->
+   <Map AU="61" side="RIGHT" morph="FACS_AU_61_R" intensity="1.0" />
+   <Map AU="62" side="LEFT"  morph="FACS_AU_62_L" intensity="1.0" /> <!-- Eyes turn right -->
+   <Map AU="62" side="RIGHT" morph="FACS_AU_62_R" intensity="1.0" />
+   <Map AU="63" side="LEFT"  morph="FACS_AU_63_L" intensity="1.0" /> <!-- Eyes up -->
+   <Map AU="63" side="RIGHT" morph="FACS_AU_63_R" intensity="1.0" />
+   <Map AU="64" side="LEFT"  morph="FACS_AU_64_L" intensity="1.0" /> <!-- Eyes down -->
+   <Map AU="64" side="RIGHT" morph="FACS_AU_64_R" intensity="1.0" />
+</FACS2MorphMapping>

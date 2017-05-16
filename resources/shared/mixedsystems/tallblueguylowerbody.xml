@@ -1,0 +1,283 @@
+<MixedSystem xmlns:col="http://www.collada.org/2005/11/COLLADASchema">
+   <PhysicalHumanoid>
+      <PhysicalRootSegment startJoint="HumanoidRoot" endJoint="l_hip r_hip l_shoulder r_shoulder skullbase" mass="42.055336" position="1.2969389E-5 1.3303533 1.726672E-4" I="2.2765296 8.9254754E-4 -1.1310564E-4 8.9254754E-4 0.5747033 -0.17825107 -1.1310564E-4 -0.17825107 2.2232447" type="hinge" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.159157 0.1513763 0.1083425
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -1.2969389E-5 -0.25146538 -0.008807167
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.123365 0.116229884 0.089052
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -1.2969389E-5 -0.084763795 0.009183336
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.158018 0.20817584 0.1128565
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -1.2969389E-5 0.1378432 4.5835972E-5
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.06584695 0.046315458 0.055664
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.16293633 0.27626783 -0.01850567
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.06584695 0.046315458 0.055664
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.16296226 0.27626783 -0.01850567
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0614115 0.08379783 0.052968502
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -1.4470681E-5 0.36262006 -0.01632516
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalRootSegment>
+      <PhysicalSegment startJoint="l_hip" endJoint="l_knee" mass="9.762665" position="0.09162084 0.8401451 -0.011238733" I="0.7272577 0.0058017736 -5.6966743E-4 0.0058017736 0.029266313 0.015953254 -5.6966743E-4 0.015953254 0.7235518" type="universal" axis1="1.0 0.0 0.0" axis2="0.0 0.0 1.0" loStop1="-2.024582" hiStop1="0.0" loStop2="-0.54105204" hiStop2="0.5235988" loStop3="-0.54105204" hiStop3="0.9250245">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.081568 0.15648529 0.095584005
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0066688326 0.104827404 -0.004758259
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.069746 0.14491183 0.0793605
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0038941684 -0.19638383 0.0034042322
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="l_knee" endJoint="l_ankle" mass="4.127201" position="0.09901978 0.36977825 -0.05057189" I="0.24107322 3.3072545E-4 3.156737E-4 3.3072545E-4 0.009936691 -0.025559988 3.156737E-4 -0.025559988 0.235446" type="hinge" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0" loStop1="0.0" hiStop1="1.9722221">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.048782498 0.2048462 0.075256996
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     2.4771737E-4 0.013991147 0.0051298887
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0313135 0.056895792 0.0427975
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0045212763 -0.24328369 0.0012953877
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="l_ankle" endJoint="l_midtarsal" mass="1.5485444" position="0.09600649 0.031979807 0.005922463" I="0.010217708 8.631261E-5 8.145744E-6 8.631261E-5 0.008151858 0.0025511957 8.145744E-6 0.0025511957 0.0037311981" type="universal" axis1="1.0 0.0 0.0" axis2="0.0 0.0 1.0" loStop1="-0.7330383" hiStop1="0.6806784" loStop3="-0.41887903" hiStop3="0.40142572">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.051357 0.055167906 0.0947215
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0051095122 0.018388651 -0.0151079595
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.04896 0.020633396 0.0474055
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     3.7951133E-4 -0.021333396 0.097385034
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="r_hip" endJoint="r_knee" mass="9.7319975" position="-0.091560446 0.8396641 -0.011249629" I="0.72816503 -0.00612311 5.8758905E-4 -0.00612311 0.029079478 0.015623741 5.8758905E-4 0.015623741 0.7245606" type="universal" axis1="1.0 0.0 0.0" axis2="0.0 0.0 1.0" loStop1="-2.024582" hiStop1="0.0" loStop2="-0.5235988" hiStop2="0.54105204" loStop3="-0.9250245" hiStop3="0.54105204">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.081568 0.15648529 0.095584005
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0066084503 0.10530838 -0.0047473637
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.069746 0.14491239 0.0793605
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0039545507 -0.1959244 0.0034151273
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="r_knee" endJoint="r_ankle" mass="4.1268344" position="-0.09902895 0.36981738 -0.05050961" I="0.24094865 -2.8558623E-4 -3.414657E-4 -2.8558623E-4 0.009930182 -0.025498474 -3.414657E-4 -0.025498474 0.23533109" type="hinge" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0" loStop1="0.0" hiStop1="1.9722221">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.048782 0.2048462 0.075256996
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -2.3904815E-4 0.013952002 0.005067611
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0313135 0.05692622 0.042772997
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.004530452 -0.24376823 0.0012386125
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="r_ankle" endJoint="r_midtarsal" mass="1.5630164" position="-0.096424595 0.032067403 0.0057665706" I="0.010284733 -1.06704916E-4 -1.0613185E-5 -1.06704916E-4 0.008226187 0.0025624135 -1.0613185E-5 0.0025624135 0.0037697577" type="universal" axis1="1.0 0.0 0.0" axis2="0.0 0.0 1.0" loStop1="-0.75049156" hiStop1="0.6806784" loStop3="-0.40142572" hiStop3="0.41887903">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.051357 0.05516403 0.094722
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.004690402 0.01830604 -0.014954567
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0489605 0.020630078 0.047406
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     3.8097525E-5 -0.02142099 0.09754042
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+   </PhysicalHumanoid>
+   <IDBranch>
+      <IDRootSegment startJoint="r_shoulder" endJoint="r_upperarm_roll" mass="1.8314722" position="-0.18872693 1.5307797 -0.021738274" I="0.0 9.0736756E-4 -7.3422793E-6 9.0736756E-4 0.003153396 1.7720004E-4 -7.3422793E-6 1.7720004E-4 0.010986211">
+      </IDRootSegment>
+      <IDSegment startJoint="r_upperarm_roll" endJoint="r_elbow" mass="1.7875366" position="-0.18678261 1.3702607 -0.024310496" I="0.0 0.0040748795 3.8138318E-5 0.0040748795 0.0029888342 -9.450178E-4 3.8138318E-5 -9.450178E-4 0.087026365">
+      </IDSegment>
+      <IDSegment startJoint="r_elbow" endJoint="r_forearm_roll" mass="1.1904945" position="-0.19134997 1.2285403 -0.03045689" I="0.0 3.7264221E-4 -6.574683E-5 3.7264221E-4 0.0013780956 6.640508E-4 -6.574683E-5 6.640508E-4 0.008046553">
+      </IDSegment>
+      <IDSegment startJoint="r_forearm_roll" endJoint="r_wrist" mass="0.69132423" position="-0.19774596 1.075664 -0.031843014" I="0.0 -7.53572E-5 2.753592E-7 -7.53572E-5 5.266381E-4 0.0010768685 2.753592E-7 0.0010768685 0.03430351">
+      </IDSegment>
+      <IDSegment startJoint="r_wrist" endJoint="r_thumb1 r_index1 r_middle1 r_ring1 r_pinky1" mass="0.52907383" position="-0.19579692 0.9455868 -0.033313684" I="0.0 6.4288215E-5 1.4859194E-5 6.4288215E-5 3.4177373E-4 2.510767E-5 1.4859194E-5 2.510767E-5 0.002418414">
+      </IDSegment>
+      <IDSegment startJoint="r_thumb1" endJoint="r_thumb2" mass="0.077444516" position="-0.1894447 0.9627786 0.002029525" I="0.0 1.26902E-5 -7.3596007E-6 1.26902E-5 3.2510394E-5 2.9802184E-5 -7.3596007E-6 2.9802184E-5 6.7832676E-5">
+      </IDSegment>
+      <IDSegment startJoint="r_thumb2" endJoint="r_thumb3" mass="0.032418728" position="-0.1773697 0.918143 0.0230377" I="0.0 3.571405E-6 -1.2329402E-6 3.571405E-6 5.530888E-6 4.1009253E-6 -1.2329402E-6 4.1009253E-6 1.6300783E-5">
+      </IDSegment>
+      <IDSegment startJoint="r_thumb3" mass="0.009875995" position="-0.16622664 0.8832783 0.030791689" I="0.0 6.341082E-7 -1.6333237E-9 6.341082E-7 6.5669576E-7 4.4523936E-9 -1.6333237E-9 4.4523936E-9 2.425716E-6">
+      </IDSegment>
+      <IDSegment startJoint="r_index1" endJoint="r_index2" mass="0.031727977" position="-0.20044911 0.8650145 6.857782E-5" I="0.0 -1.3705262E-7 1.0281636E-8 -1.3705262E-7 3.0989775E-6 1.2434916E-6 1.0281636E-8 1.2434916E-6 1.9859071E-5">
+      </IDSegment>
+      <IDSegment startJoint="r_index2" endJoint="r_index3" mass="0.019171003" position="-0.1995014 0.826328 0.0027057794" I="0.0 5.31801E-7 -3.0476567E-8 5.31801E-7 1.2929424E-6 4.085582E-7 -3.0476567E-8 4.085582E-7 8.518247E-6">
+      </IDSegment>
+      <IDSegment startJoint="r_index3" mass="0.008678887" position="-0.19612938 0.7951548 0.004143168" I="0.0 2.2959365E-7 -9.958893E-9 2.2959365E-7 3.895787E-7 6.396542E-8 -9.958893E-9 6.396542E-8 1.8972544E-6">
+      </IDSegment>
+      <IDSegment startJoint="r_middle1" endJoint="r_middle2" mass="0.037240446" position="-0.20260783 0.86308473 -0.024808634" I="0.0 5.902421E-10 1.2076965E-11 5.902421E-10 3.924091E-6 -7.1071824E-8 1.2076965E-11 -7.1071824E-8 2.4024284E-5">
+      </IDSegment>
+      <IDSegment startJoint="r_middle2" endJoint="r_middle3" mass="0.022501864" position="-0.20126331 0.8221366 -0.024905521" I="0.0 7.776438E-7 3.1465401E-9 7.776438E-7 1.6726757E-6 -3.6593615E-8 3.1465401E-9 -3.6593615E-8 1.0949208E-5">
+      </IDSegment>
+      <IDSegment startJoint="r_middle3" mass="0.010187179" position="-0.19562857 0.7896887 -0.02519616" I="0.0 4.635729E-7 2.4508928E-9 4.635729E-7 5.77984E-7 -9.49744E-9 2.4508928E-9 -9.49744E-9 2.4241795E-6">
+      </IDSegment>
+      <IDSegment startJoint="r_ring1" endJoint="r_ring2" mass="0.024545481" position="-0.19825923 0.86523074 -0.050850492" I="0.0 2.1236043E-7 7.2291124E-9 2.1236043E-7 1.9751371E-6 -3.565112E-7 7.2291124E-9 -3.565112E-7 1.2655525E-5">
+      </IDSegment>
+      <IDSegment startJoint="r_ring2" endJoint="r_ring3" mass="0.0148314005" position="-0.1962715 0.8297087 -0.05193746" I="0.0 4.872351E-7 9.648708E-9 4.872351E-7 8.544287E-7 -9.254621E-8 9.648708E-9 -9.254621E-8 5.6080294E-6">
+      </IDSegment>
+      <IDSegment startJoint="r_ring3" mass="0.006714364" position="-0.191483 0.8012997 -0.052233048" I="0.0 1.9046715E-7 -8.432083E-11 1.9046715E-7 2.688352E-7 3.9841852E-10 -8.432083E-11 3.9841852E-10 1.2001594E-6">
+      </IDSegment>
+      <IDSegment startJoint="r_pinky1" endJoint="r_pinky2" mass="0.015772723" position="-0.19051181 0.8692045 -0.075011045" I="0.0 2.545496E-7 1.4980788E-8 2.545496E-7 9.672908E-7 -2.7457125E-7 1.4980788E-8 -2.7457125E-7 5.7138654E-6">
+      </IDSegment>
+      <IDSegment startJoint="r_pinky2" endJoint="r_pinky3" mass="0.009530983" position="-0.18782826 0.83863634 -0.07660556" I="0.0 2.8859355E-7 1.08256195E-8 2.8859355E-7 4.2632095E-7 -7.875236E-8 1.08256195E-8 -7.875236E-8 2.5619765E-6">
+      </IDSegment>
+      <IDSegment startJoint="r_pinky3" mass="0.004314535" position="-0.18226245 0.8144152 -0.07711185" I="0.0 1.0007605E-7 9.132741E-10 1.0007605E-7 1.3372426E-7 -3.7744035E-9 9.132741E-10 -3.7744035E-9 5.5913307E-7">
+      </IDSegment>
+   </IDBranch>
+   <IDBranch>
+      <IDRootSegment startJoint="l_shoulder" endJoint="l_upperarm_roll" mass="1.8313701" position="0.18873666 1.5307814 -0.02174728" I="0.0 -9.0465345E-4 8.281208E-6 -9.0465345E-4 0.0031526096 1.7572603E-4 8.281208E-6 1.7572603E-4 0.010984758">
+      </IDRootSegment>
+      <IDSegment startJoint="l_upperarm_roll" endJoint="l_elbow" mass="1.7881279" position="0.18693197 1.3702474 -0.024393957" I="0.0 -0.0040155733 -4.868387E-5 -0.0040155733 0.0029853357 -9.818566E-4 -4.868387E-5 -9.818566E-4 0.0870604">
+      </IDSegment>
+      <IDSegment startJoint="l_elbow" endJoint="l_forearm_roll" mass="1.1899886" position="0.19126455 1.2285199 -0.030378245" I="0.0 -3.8031497E-4 6.86441E-5 -3.8031497E-4 0.0013798442 6.671421E-4 6.86441E-5 6.671421E-4 0.008047481">
+      </IDSegment>
+      <IDSegment startJoint="l_forearm_roll" endJoint="l_wrist" mass="0.688419" position="0.19770952 1.0758032 -0.032038685" I="0.0 7.2360206E-5 2.8760535E-6 7.2360206E-5 5.212573E-4 0.0010386516 2.8760535E-6 0.0010386516 0.034117986">
+      </IDSegment>
+      <IDSegment startJoint="l_wrist" endJoint="l_thumb1 l_index1 l_middle1 l_ring1 l_pinky1" mass="0.52903986" position="0.19578478 0.9455735 -0.033255026" I="0.0 -6.509981E-5 -1.4031509E-5 -6.509981E-5 3.412718E-4 2.726005E-5 -1.4031509E-5 2.726005E-5 0.0024205374">
+      </IDSegment>
+      <IDSegment startJoint="l_thumb1" endJoint="l_thumb2" mass="0.07744409" position="0.18945557 0.96277606 0.0020299628" I="0.0 -1.26653595E-5 7.344705E-6 -1.26653595E-5 3.249842E-5 2.9806717E-5 7.344705E-6 2.9806717E-5 6.783157E-5">
+      </IDSegment>
+      <IDSegment startJoint="l_thumb2" endJoint="l_thumb3" mass="0.032418985" position="0.17737882 0.91813993 0.02303644" I="0.0 -3.5653654E-6 1.2303807E-6 -3.5653654E-6 5.526302E-6 4.1008607E-6 1.2303807E-6 4.1008607E-6 1.6301388E-5">
+      </IDSegment>
+      <IDSegment startJoint="l_thumb3" mass="0.0098755555" position="0.16621645 0.8832821 0.030792039" I="0.0 -6.3545946E-7 1.6680922E-9 -6.3545946E-7 6.578322E-7 4.5204227E-9 1.6680922E-9 4.5204227E-9 2.4255776E-6">
+      </IDSegment>
+      <IDSegment startJoint="l_index1" endJoint="l_index2" mass="0.031727973" position="0.20044957 0.86501414 6.817479E-5" I="0.0 1.3743168E-7 -1.0329969E-8 1.3743168E-7 3.0989036E-6 1.2431271E-6 -1.0329969E-8 1.2431271E-6 1.9859533E-5">
+      </IDSegment>
+      <IDSegment startJoint="l_index2" endJoint="l_index3" mass="0.019171149" position="0.1994997 0.8263282 0.0027055156" I="0.0 -5.3251404E-7 3.052437E-8 -5.3251404E-7 1.2930507E-6 4.084362E-7 3.052437E-8 4.084362E-7 8.518257E-6">
+      </IDSegment>
+      <IDSegment startJoint="l_index3" mass="0.008679194" position="0.19612734 0.79515505 0.0041432003" I="0.0 -2.2987219E-7 9.968245E-9 -2.2987219E-7 3.8969006E-7 6.397823E-8 9.968245E-9 6.397823E-8 1.8973391E-6">
+      </IDSegment>
+      <IDSegment startJoint="l_middle1" endJoint="l_middle2" mass="0.037240427" position="0.20260784 0.86308473 -0.024808604" I="0.0 -5.931781E-10 7.379819E-12 -5.931781E-10 3.9240904E-6 -7.103623E-8 7.379819E-12 -7.103623E-8 2.4024303E-5">
+      </IDSegment>
+      <IDSegment startJoint="l_middle2" endJoint="l_middle3" mass="0.02250197" position="0.20126148 0.8221367 -0.02490554" I="0.0 -7.786033E-7 -3.1188314E-9 -7.786033E-7 1.6728571E-6 -3.6600188E-8 -3.1188314E-9 -3.6600188E-8 1.0949233E-5">
+      </IDSegment>
+      <IDSegment startJoint="l_middle3" mass="0.010186921" position="0.19562533 0.7896896 -0.025196383" I="0.0 -4.64059E-7 -2.4613753E-9 -4.64059E-7 5.782271E-7 -9.528443E-9 -2.4613753E-9 -9.528443E-9 2.4241072E-6">
+      </IDSegment>
+      <IDSegment startJoint="l_ring1" endJoint="l_ring2" mass="0.024545422" position="0.19825917 0.86523086 -0.05084981" I="0.0 -2.1240712E-7 -7.20555E-9 -2.1240712E-7 1.9751049E-6 -3.561799E-7 -7.20555E-9 -3.561799E-7 1.26554105E-5">
+      </IDSegment>
+      <IDSegment startJoint="l_ring2" endJoint="l_ring3" mass="0.014831158" position="0.19626954 0.8297091 -0.05193758" I="0.0 -4.8784335E-7 -9.6646E-9 -4.8784335E-7 8.545316E-7 -9.25822E-8 -9.6646E-9 -9.25822E-8 5.607842E-6">
+      </IDSegment>
+      <IDSegment startJoint="l_ring3" mass="0.006714365" position="0.19148077 0.8013001 -0.052232992" I="0.0 -1.9066223E-7 8.7052136E-11 -1.9066223E-7 2.6891985E-7 3.9526543E-10 8.7052136E-11 3.9526543E-10 1.2001718E-6">
+      </IDSegment>
+      <IDSegment startJoint="l_pinky1" endJoint="l_pinky2" mass="0.015772957" position="0.19051108 0.8692045 -0.075010635" I="0.0 -2.5471064E-7 -1.4985194E-8 -2.5471064E-7 9.673249E-7 -2.744541E-7 -1.4985194E-8 -2.744541E-7 5.7139746E-6">
+      </IDSegment>
+      <IDSegment startJoint="l_pinky2" endJoint="l_pinky3" mass="0.009530472" position="0.18782628 0.83863646 -0.076605216" I="0.0 -2.8890318E-7 -1.0833869E-8 -2.8890318E-7 4.263658E-7 -7.8710514E-8 -1.0833869E-8 -7.8710514E-8 2.56186E-6">
+      </IDSegment>
+      <IDSegment startJoint="l_pinky3" mass="0.004314691" position="0.18226033 0.8144161 -0.07711205" I="0.0 -1.0017511E-7 -9.112337E-10 -1.0017511E-7 1.3378616E-7 -3.783218E-9 -9.112337E-10 -3.783218E-9 5.591278E-7">
+      </IDSegment>
+   </IDBranch>
+   <IDBranch>
+      <IDRootSegment startJoint="skullbase" mass="4.062912" position="-1.2141063E-4 1.8325961 -6.823181E-4" I="0.0 6.670343E-5 -2.0783855E-5 6.670343E-5 0.0119913425 0.002543468 -2.0783855E-5 0.002543468 0.034306664">
+      </IDRootSegment>
+   </IDBranch>
+
+</MixedSystem>

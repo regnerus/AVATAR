@@ -1,0 +1,568 @@
+<MixedSystem xmlns:col="http://www.collada.org/2005/11/COLLADASchema">
+   <PhysicalHumanoid>
+      <PhysicalRootSegment startJoint="HumanoidRoot" endJoint="l_hip r_hip l_shoulder r_shoulder vc4" mass="36.739685" position="1.4310956E-5 1.2004323 0.017934367" I="1.5961684 7.1104243E-4 -1.0351499E-4 7.1104243E-4 0.50910264 -0.15270229 -1.0351499E-4 -0.15270229 1.5400909" type="hinge" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.159157 0.1367995 0.1083425
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -1.4310956E-5 -0.21631174 -0.009431869
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.123365 0.105037495 0.089052
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -1.4310956E-5 -0.06566275 0.008558635
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.158018 0.1881295 0.1128565
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -1.4310956E-5 0.13550825 -5.788654E-4
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.059464503 0.0418555 0.055664
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.1557672 0.26060325 -0.019130372
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.059464503 0.0418555 0.055664
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.15579581 0.26060325 -0.019130372
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalRootSegment>
+      <PhysicalSegment startJoint="l_hip" endJoint="l_knee" mass="8.822567" position="0.091620825 0.7683674 0.0058982586" I="0.53947634 0.0047381283 -5.1481114E-4 0.0047381283 0.02644808 0.013028727 -5.1481114E-4 0.013028727 0.53612715" type="universal" axis1="1.0 0.0 0.0" axis2="0.0 0.0 1.0" loStop1="-2.024582" hiStop1="0.0" loStop2="-0.54105204" hiStop2="0.5235988" loStop3="-0.54105204" hiStop3="0.9250245">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.081568 0.14141649 0.095584005
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0066688214 0.094733045 -0.0047582528
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.069746 0.13095751 0.0793605
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0038941796 -0.17747295 0.0034042383
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="l_knee" endJoint="l_ankle" mass="3.72977" position="0.09901978 0.3432945 -0.033434924" I="0.17921114 2.7010543E-4 2.8527534E-4 2.7010543E-4 0.008979771 -0.020874415 2.8527534E-4 -0.020874415 0.17412576" type="hinge" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0" loStop1="0.0" hiStop1="1.9722221">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.048782498 0.1851205 0.075256996
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     2.4771574E-4 0.012644008 0.005129922
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0313135 0.051416993 0.0427975
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0045212777 -0.21985649 0.0012954213
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="l_ankle" endJoint="l_midtarsal" mass="1.3994272" position="0.09600649 0.038024552 0.02305945" I="0.008753609 7.0489914E-5 7.3613337E-6 7.0489914E-5 0.0073668757 0.0020835178 7.3613337E-6 0.0020835178 0.0028917168" type="universal" axis1="1.0 0.0 0.0" axis2="0.0 0.0 1.0" loStop1="-0.7330383" hiStop1="0.6806784" loStop3="-0.41887903" hiStop3="0.40142572">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.051357 0.0498555 0.0947215
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0051095122 0.016617924 -0.015107948
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.04896 0.0186465 0.0474055
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     3.7951118E-4 -0.019279078 0.09738505
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="r_hip" endJoint="r_knee" mass="8.794855" position="-0.09156042 0.7679329 0.0058873687" I="0.54012173 -0.005000669 5.310062E-4 -0.005000669 0.026279371 0.01275962 5.310062E-4 0.01275962 0.5368645" type="universal" axis1="1.0 0.0 0.0" axis2="0.0 0.0 1.0" loStop1="-2.024582" hiStop1="0.0" loStop2="-0.5235988" hiStop2="0.54105204" loStop3="-0.9250245" hiStop3="0.54105204">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.081568 0.14141649 0.095584005
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0066084275 0.09516758 -0.004747363
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.069746 0.130958 0.0793605
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0039545735 -0.17705794 0.0034151282
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="r_knee" endJoint="r_ankle" mass="3.729441" position="-0.09902896 0.34333003 -0.033372607" I="0.17911766 -2.3322122E-4 -3.0858425E-4 -2.3322122E-4 0.008973901 -0.020824168 -3.0858425E-4 -0.020824168 0.17404102" type="hinge" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0" loStop1="0.0" hiStop1="1.9722221">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.048782 0.1851205 0.075256996
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -2.3903907E-4 0.012608454 0.0050676055
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0313135 0.0514445 0.042772997
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0045304615 -0.22029455 0.0012386069
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="r_ankle" endJoint="r_midtarsal" mass="1.4125054" position="-0.096424595 0.038103715 0.022903573" I="0.008811593 -8.714395E-5 -9.59116E-6 -8.714395E-5 0.007434045 0.0020926762 -9.59116E-6 0.0020926762 0.002923978" type="universal" axis1="1.0 0.0 0.0" axis2="0.0 0.0 1.0" loStop1="-0.75049156" hiStop1="0.6806784" loStop3="-0.40142572" hiStop3="0.41887903">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.051357 0.049852 0.094722
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.004690402 0.016543262 -0.014954571
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0489605 0.0186435 0.047406
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     3.809741E-5 -0.01935824 0.09754042
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="l_shoulder" endJoint="l_elbow" mass="2.9539084" position="0.1782642 1.3208277 -0.0059178104" I="0.08087751 -0.0034516177 -3.2961987E-5 -0.0034516177 0.0045061754 -8.780483E-4 -3.2961987E-5 -8.780483E-4 0.08088656" type="ball" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0" loStop2="-1.4137167" hiStop2="1.4137167">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.054513995 0.081333 0.05621
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     8.638175E-4 0.07776934 9.208142E-4
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.053256996 0.087328985 0.058555
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -3.931811E-4 -0.08487265 4.7881593E-4
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="l_elbow" endJoint="l_thumb3 l_index3 l_middle3 l_ring3 l_pinky3" mass="2.2299416" position="0.1837772 0.9978907 -0.012454898" I="0.063313074 1.4826014E-4 8.23394E-5 1.4826014E-4 0.0020493933 0.001688663 8.23394E-5 0.001688663 0.062643334" type="hinge" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0" loStop1="-2.48" hiStop1="0.0">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.042922497 0.07701149 0.047353998
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0033646869 0.12422579 6.438913E-4
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.036845498 0.07459299 0.042450503
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0012443205 -0.026902705 -9.456044E-4
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.026189998 0.0652475 0.050545
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0033448404 -0.13113032 -0.0069191037
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.022224497 0.034009498 0.028888501
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0030716555 -0.11877626 0.03156239
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.017816497 0.025173498 0.018792
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.01353364 -0.1604693 0.05150789
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.012983497 0.016594999 0.009994499
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.024539627 -0.19096988 0.060356393
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0149989985 0.022521498 0.015393
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0057428377 -0.20818335 0.028584896
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.012482498 0.020058498 0.0124835
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.005889346 -0.24290437 0.03143239
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.010719999 0.014840499 0.0097925
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0025878316 -0.27054638 0.03326939
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0143249985 0.022998998 0.016540501
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.007821829 -0.2101888 0.004846397
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.012227998 0.021058496 0.0135955
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.007415847 -0.2467913 0.0047503943
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.011457998 0.015815498 0.0107815005
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0019788118 -0.2754192 0.0044543976
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0135975 0.020354498 0.0141245
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.004169328 -0.20793726 -0.020741608
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.011644999 0.018526498 0.011634
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0028388323 -0.23971118 -0.022072108
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.009905999 0.013706999 0.009304
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0017511602 -0.26487863 -0.022646107
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.012029 0.017826498 0.011911
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0024641342 -0.20407125 -0.044649106
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.010646499 0.016173998 0.0098205
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0049126614 -0.2314218 -0.046562605
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.008975498 0.011959499 0.007888
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.010159624 -0.2528843 -0.047444105
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="r_shoulder" endJoint="r_elbow" mass="2.953509" position="-0.1781933 1.3208469 -0.0058717486" I="0.080845855 0.003506411 2.6031268E-5 0.003506411 0.0045088585 -8.417495E-4 2.6031268E-5 -8.417495E-4 0.08086011" type="ball" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0" loStop2="-1.4137167" hiStop2="1.4137167">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.054513995 0.081333 0.05621
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -9.34707E-4 0.0777502 8.747524E-4
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.053256996 0.087328985 0.058555
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     3.2229163E-4 -0.08489179 4.3275417E-4
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+      <PhysicalSegment startJoint="r_elbow" endJoint="r_thumb3 r_index3 r_middle3 r_ring3 r_pinky3" mass="2.2327542" position="-0.1838241 0.9978727 -0.01245382" I="0.06344879 -1.4817879E-4 -7.693803E-5 -1.4817879E-4 0.0020522375 0.0017204869 -7.693803E-5 0.0017204869 0.06277726" type="hinge" axis1="1.0 0.0 0.0" axis2="0.0 1.0 0.0" loStop1="-2.48" hiStop1="0.0">
+         <CollisionModel>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.042922497 0.07701149 0.047353998
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0034115964 0.12424377 6.428128E-4
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.036845498 0.07459299 0.042450503
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0011974073 -0.02688472 -9.466829E-4
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.026189998 0.0652475 0.050545
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0032979308 -0.13111234 -0.006920182
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.022232497 0.034006998 0.028888
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0031295659 -0.11875579 0.031560812
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.017822998 0.025171496 0.018792499
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.013591049 -0.1604473 0.05150831
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.012975998 0.016593998 0.009995
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.024576036 -0.1909569 0.060355816
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0149989985 0.022521999 0.015394
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.005695929 -0.20816587 0.028583817
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.012480998 0.020057498 0.0124835
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0058439365 -0.24288638 0.03143131
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.010717999 0.014839998 0.0097925
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0025429216 -0.27052888 0.033268314
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.0143249985 0.022998998 0.016540501
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.00777492 -0.21017082 0.0048453184
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.012225999 0.021057498 0.0135955
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0073709367 -0.24677332 0.004749316
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.011455499 0.015814498 0.0107815005
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0019354022 -0.27540222 0.004453319
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.013596999 0.020354498 0.014125
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.004121918 -0.20791927 -0.020743186
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.011642998 0.018525999 0.011634
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     -0.0027939223 -0.23969369 -0.022073187
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.009903999 0.013705999 0.009304499
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0017960703 -0.26486164 -0.022647686
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.012028499 0.017826498 0.011911
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0025105437 -0.20405328 -0.044650182
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.010644499 0.016173499 0.009821
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.0049575716 -0.23140432 -0.046564184
+                  </col:translate>
+            </col:shape>
+            <col:shape>
+                  <col:box>
+                        <col:half_extents>0.008973499 0.011958999 0.007888
+                        </col:half_extents>
+                  </col:box>
+                  <col:translate>
+                     0.010204533 -0.2528668 -0.047445185
+                  </col:translate>
+            </col:shape>
+         </CollisionModel>
+      </PhysicalSegment>
+   </PhysicalHumanoid>
+   <IDBranch>
+      <IDRootSegment startJoint="vc4" endJoint="skullbase" mass="1.1325723" position="-2.9651126E-5 1.5368372 -5.519185E-4" I="0.0 1.0986113E-6 -1.6754126E-6 1.0986113E-6 0.0014984569 -3.559179E-4 -1.6754126E-6 -3.559179E-4 0.0028685592">
+      </IDRootSegment>
+      <IDSegment startJoint="skullbase" mass="3.6716704" position="-1.2141613E-4 1.6652502 0.01645468" I="0.0 5.4475462E-5 -1.8782372E-5 5.4475462E-5 0.010836626 0.0020772053 -1.8782372E-5 0.0020772053 0.026134437">
+      </IDSegment>
+   </IDBranch>
+
+</MixedSystem>

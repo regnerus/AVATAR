@@ -1,0 +1,6 @@
+{
+    "msgType": "CleVRLookAt",
+    "agentId": "${vhId}",
+    "target": "${target}",
+    "duration": ${duration}
+}

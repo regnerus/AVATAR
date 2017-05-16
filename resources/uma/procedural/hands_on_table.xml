@@ -1,0 +1,23 @@
+<ProcAnimation prefDuration="2" minDuration="2" maxDuration="100000000">
+    <EndEffector local="true" target="r_wrist" translation="tcbspline(t,0,0,XC,0.0,XC,0.08829594,0,0,0,XC,0.54414797,0,0,0,XC,1.0);tcbspline(t,0,0,YCC,0.0,YCC,0.08829594,0,0,0,YLOWERP,0.54414797,0,0,0,YLOWERP,1.0);tcbspline(t,0,0,ZMIDDLE,0.0,ZMIDDLE,0.08829594,0,0,0,(ZMIDDLE*0.5),0.54414797,0,0,0,(ZMIDDLE*0.5),1.0)" swivel="0.4"/>
+    <EndEffector local="true" target="l_wrist" translation="tcbspline(t,0,0,-XC,0.0,-XC,0.08829594,0,0,0,-XC,0.54414797,0,0,0,-XC,1.0);tcbspline(t,0,0,YCC,0.0,YCC,0.08829594,0,0,0,YLOWERP,0.54414797,0,0,0,YLOWERP,1.0);tcbspline(t,0,0,ZMIDDLE,0.0,ZMIDDLE,0.08829594,0,0,0,(ZMIDDLE*0.5),0.54414797,0,0,0,(ZMIDDLE*0.5),1.0)" swivel="-0.4"/>
+    <Keyframes target="r_wrist" encoding="quaternion">
+        <Keyframe time="0" local="true" value="1;0;0;0"/>
+        <Keyframe time="1" local="true" value="1;0;0;0"/>
+    </Keyframes>
+    <Keyframes target="l_wrist" encoding="quaternion">
+        <Keyframe time="0" local="true" value="1;0;0;0"/>
+        <Keyframe time="1" local="true" value="1;0;0;0"/>
+    </Keyframes>
+    <KeyPosition id="start" weight="1" time="0.0"/>
+    <KeyPosition id="ready" weight="1" time="0.0"/>
+    <KeyPosition id="strokeStart" weight="1" time="0.1"/>
+    <KeyPosition id="stroke" weight="1" time="0.5"/>
+    <KeyPosition id="strokeEnd" weight="1" time="0.5"/>
+    <KeyPosition id="relax" weight="1" time="1.0"/>
+    <KeyPosition id="end" weight="1" time="1.0"/>
+    <Parameter description="" sid="XC" value="-0.05"/>
+    <Parameter description="" sid="YCC" value="-0.3"/>
+    <Parameter description="" sid="ZMIDDLE" value="0.18"/>
+    <Parameter description="" sid="YLOWERP" value="-0.47"/>
+</ProcAnimation>

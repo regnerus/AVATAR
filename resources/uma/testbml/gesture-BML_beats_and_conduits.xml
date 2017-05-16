@@ -1,0 +1,15 @@
+<!-- plays 4 default BML Beat Gestures and two BML Conduit Gestures, using default preparations. 
+Note that, in the current gesture binding, some of these gestures may map to the same form. -->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+  <gesture id="g1" mode="LEFT_HAND" lexeme="BEAT" start="0.5"/>
+  
+  <gesture id="g2" mode="RIGHT_HAND" lexeme="BEAT" start="g1:end+1"/>
+  
+  <gesture id="g3" mode="BOTH_HANDS" lexeme="BEAT" start="g2:end+1"/>
+  
+  <gesture id="g4" lexeme="BEAT" start="g3:end+1"/>  
+
+  <gesture id="g5" lexeme="CONDUIT" mode="BOTH_HANDS" start="g4:end+1"/>
+
+  <gesture id="g6" lexeme="CONDUIT" start="g5:end+1"/>
+</bml>

@@ -1,0 +1,21 @@
+<!--
+Moves Armandia with the feet exactly on the ground in a comfortable pose close to the h-anim pose.
+Global y translation: 0.9470096 (def y) + 0.028202161 (hanim correction from pheditor) = 0.975211761
+
+<SkeletonPose rotationEncoding="axisangles" parts="HumanoidRoot r_shoulder l_shoulder" encoding="T1R">
+	0 0.975211761 0 1 0 0 0 0 0 1 -0.20 0 0 1 0.20
+</SkeletonPose>
+r_elbow
+0 1 0 5
+-->
+
+<SkeletonPose rotationEncoding="axisangles" parts="HumanoidRoot r_sternoclavicular r_shoulder r_elbow l_sternoclavicular l_shoulder l_elbow" encoding="T1R">
+    0 0.975211761 0
+    1 0 0 0
+    0 0 1 0.24
+    0 0 1 -0.55
+    1 0 0 -0.08
+    0 0 1 -0.24
+    0 0 1 0.55
+    1 0 0 -0.08
+</SkeletonPose>

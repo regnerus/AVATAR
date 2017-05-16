@@ -1,0 +1,10 @@
++ASL_5.pose
+ASL_A.pose
+ASL_B.pose
+ASL_C_large.pose
+ASL_C.pose
+ASL_C_small.pose
+ASL_G.pose
+ASL_grasp.pose
+ASL_O.pose
+BSifinger.pose

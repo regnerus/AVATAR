@@ -1,0 +1,10 @@
+<!-- 
+Example script controlling the face using lexicalized expressions .
+See the facebinding.xml for the mapping of lexemes to FACS configurations, morph targets, or locations in Plutchik's emotion wheel.
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+  <faceLexeme id="f1" start="0" end="4" lexeme="think" amount="1"/>
+  <faceLexeme id="f2" start="5" end="9" lexeme="anger" amount="1"/>
+  <faceLexeme id="f3" start="10" end="14" lexeme="sadness" amount="1"/>
+  <faceLexeme id="f4" start="15" end="19" lexeme="surprise" amount="1"/>  
+</bml>

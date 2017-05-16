@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<hns>
+ 
+  <settings>
+     <setting name="zyxAxes" value="1"/>
+  </settings>
+  <!-- positions are relative to hips/vl5 joint -->
+  <basejoint sid="vl5"/>
+  <defaultPointingHandshape name="pointing"/>	
+  <symbols>
+    <!-- HANDSHAPES -->
+    <symbol class="handShapes" name="BSfist" value=""/> 
+    <symbol class="handShapes" name="BSflatc" value=""/>
+    <symbol class="handShapes" name="BSflato" value=""/> 
+    <symbol class="handShapes" name="BSifinger" value=""/> 
+    <symbol class="handShapes" name="BSimcfinger" value=""/> 
+    <symbol class="handShapes" name="BSimofinger" value=""/> 
+    <symbol class="handShapes" name="BSffinger" value=""/>  
+    <symbol class="handShapes" name="BSneutral" value=""/>  
+    <symbol class="handShapes" name="BSdfistc" value=""/>  
+    <symbol class="handShapes" name="BSdfisto" value=""/>  
+    <symbol class="handShapes" name="BSdflatc" value=""/>  
+    <symbol class="handShapes" name="BSdflato" value=""/>  
+    <symbol class="handShapes" name="BSdifingerc" value=""/>  
+    <symbol class="handShapes" name="BSdifingero" value=""/>  
+    <symbol class="handShapes" name="ThNorm" value=""/>  
+    <symbol class="handShapes" name="ThExt" value=""/>  
+    <symbol class="handShapes" name="ThAcr" value=""/>  
+    <symbol class="handShapes" name="ThDown" value=""/>  
+    <symbol class="handShapes" name="OpNorm" value=""/>  
+    <symbol class="handShapes" name="OpWide" value=""/>  
+    <symbol class="handShapes" name="OpNarrow" value=""/>  
+    <symbol class="handShapes" name="FBangle" value=""/>  
+    <symbol class="handShapes" name="FBround" value=""/>  
+    <symbol class="handShapes" name="FBbent" value=""/>  
+    <symbol class="handShapes" name="FB2angle" value=""/>  
+    <symbol class="handShapes" name="FB2round" value=""/>  
+    <symbol class="handShapes" name="FB2bent" value=""/>  
+    <symbol class="handShapes" name="FB2rol" value=""/>  
+    <symbol class="handShapes" name="FB2str" value=""/>  
+    <symbol class="handShapes" name="FB3angle" value=""/>  
+    <symbol class="handShapes" name="FB3round" value=""/>  
+    <symbol class="handShapes" name="FB3bent" value=""/>  
+    <symbol class="handShapes" name="FB3rol" value=""/>  
+    <symbol class="handShapes" name="FB3str" value=""/>  
+    <symbol class="handShapes" name="FB4angle" value=""/>  
+    <symbol class="handShapes" name="FB4round" value=""/>  
+    <symbol class="handShapes" name="FB4bent" value=""/>  
+    <symbol class="handShapes" name="FB4rol" value=""/>  
+    <symbol class="handShapes" name="FB4str" value=""/>  
+    <symbol class="handShapes" name="FB5angle" value=""/>  
+    <symbol class="handShapes" name="FB5round" value=""/>  
+    <symbol class="handShapes" name="FB5bent" value=""/>  
+    <symbol class="handShapes" name="FB5rol" value=""/>  
+    <symbol class="handShapes" name="FB5str" value=""/>  
+    <symbol class="handShapes" name="ASL2" value=""/>  
+    <symbol class="handShapes" name="ASL5" value=""/>
+    <symbol class="handShapes" name="ASLa" value=""/>  
+    <symbol class="handShapes" name="ASLb" value=""/>  
+    <symbol class="handShapes" name="ASLc" value=""/>  
+    <symbol class="handShapes" name="ASLcsmall" value=""/>  
+    <symbol class="handShapes" name="ASLclarge" value=""/>  
+    <symbol class="handShapes" name="ASLg" value=""/>  
+    <symbol class="handShapes" name="ASLo" value=""/>  
+    <symbol class="handShapes" name="ASLy" value=""/> 
+    <symbol class="handShapes" name="ASLgrasp" value=""/>
+  
+<!-- BASIC HANDSHAPES -->
+    <symbol class="basicHandShapes" name="BSfist" value=""/>
+    <symbol class="basicHandShapes" name="BSflat" value=""/>
+    <symbol class="basicHandShapes" name="BSffinger"  value=""/>
+    <symbol class="basicHandShapes" name="BSneutral"  value=""/>
+    <symbol class="basicHandShapes" name="ASL2"  value=""/>
+    <symbol class="basicHandShapes" name="ASL5"  value=""/>
+    <symbol class="basicHandShapes" name="ASLa"  value=""/>
+    <symbol class="basicHandShapes" name="ASLb"  value=""/>
+    <symbol class="basicHandShapes" name="ASLc"  value=""/>
+    <symbol class="basicHandShapes" name="ASLcsmall"  value=""/>
+    <symbol class="basicHandShapes" name="ASLclarge"  value=""/>
+    <symbol class="basicHandShapes" name="ASLg"  value=""/>
+    <symbol class="basicHandShapes" name="ASLo"  value=""/>
+    <symbol class="basicHandShapes" name="ASLy"  value=""/>
+    <symbol class="basicHandShapes" name="ASLgrasp" value=""/>
+
+  
+<!-- SPECIFIC HANDSHAPES -->
+    <symbol class="specificHandShapes" name="BSifinger"  value=""/> 
+    <symbol class="specificHandShapes" name="BSimcfinger" value=""/> 
+    <symbol class="specificHandShapes" name="BSimofinger" value=""/> 
+    <symbol class="specificHandShapes" name="BSdfistc" value=""/> 
+    <symbol class="specificHandShapes" name="BSdfisto" value=""/> 
+    <symbol class="specificHandShapes" name="BSdflatc" value=""/> 
+    <symbol class="specificHandShapes" name="BSdflato" value=""/> 
+    <symbol class="specificHandShapes" name="BSdifingerc" value=""/> 
+    <symbol class="specificHandShapes" name="BSdifingero" value=""/> 
+    <symbol class="specificHandShapes" name="BSpoint" value=""/>
+  
+<!-- THUMBSHAPES -->
+    <symbol class="thumbShapes" name="ThExt" value=""/>
+    <symbol class="thumbShapes" name="ThAcr" value=""/>
+    <symbol class="thumbShapes" name="ThCpart" value=""/>
+  
+
+<!-- fingerShapes-->
+    <symbol class="fingerShapes" name="FBstr" value=""/> 
+    <symbol class="fingerShapes" name="FBangle" value=""/> 
+    <symbol class="fingerShapes" name="FBround" value=""/> 
+    <symbol class="fingerShapes" name="FBbent" value=""/> 
+    <symbol class="fingerShapes" name="FBroll" value=""/> 
+    <symbol class="fingerShapes" name="FBstiff" value=""/> 
+    <symbol class="fingerShapes" name="FAdd" value=""/> 
+    <symbol class="fingerShapes" name="FAbd" value=""/>
+  
+ <!-- fingerParameter-->
+    <symbol class="fingerParameter" name="all" value=""/> 
+    <symbol class="fingerParameter" name="l" value=""/> 
+    <symbol class="fingerParameter" name="r" value=""/> 
+    <symbol class="fingerParameter" name="m" value=""/> 
+    <symbol class="fingerParameter" name="p" value=""/>
+
+  
+    <symbol class="openingParameter" name="c" value=""/> 
+    <symbol class="openingParameter" name="no" value=""/> 
+    <symbol class="openingParameter" name="o" value=""/> 
+    <symbol class="openingParameter" name="wo" value=""/> 
+  
+  
+    <!-- handReferences-->
+    <symbol class="handReferences" name="LocAboveHead" value="0.75"/>
+    <symbol class="handReferences" name="LocHead" value="0.66"/>
+    <symbol class="handReferences" name="LocForeHead" value="0.64"/>
+    <symbol class="handReferences" name="LocEyes" value="0.59"/>
+    <symbol class="handReferences" name="LocNose" value="0.54"/>
+    <symbol class="handReferences" name="LocMouth" value="0.49"/>
+    <symbol class="handReferences" name="LocChin" value="0.46"/>
+    <symbol class="handReferences" name="LocLowerChin" value="0.45"/>
+    <symbol class="handReferences" name="LocNeck" value="0.44"/>
+    <symbol class="handReferences" name="LocShoulder" value="0.42"/>
+    <symbol class="handReferences" name="LocUpperChest" value="0.35"/>
+    <symbol class="handReferences" name="LocChest" value="0.28"/>
+    <symbol class="handReferences" name="LocLowerChest" value="0.20"/>
+    <symbol class="handReferences" name="LocAbdomen" value="0.15"/>
+    <symbol class="handReferences" name="LocUpperStomach" value="0.12"/>
+    <symbol class="handReferences" name="LocStomach" value="0.08"/>
+    <symbol class="handReferences" name="LocLowerStomach" value="0.03"/>
+    <symbol class="handReferences" name="LocHip" value="0"/>
+  <!--/handReferences-->
+  
+  <!--handLocators-->
+    <symbol class="handLocators" name="LocCCenter" value="0"/>
+    <symbol class="handLocators" name="LocCCenterLeft" value="15"/>
+    <symbol class="handLocators" name="LocCenterLeft" value="25"/>
+    <symbol class="handLocators" name="LocCenterLLeft" value="30"/>
+    <symbol class="handLocators" name="LocPeripheryLeft" value="35"/>
+    <symbol class="handLocators" name="LocExtremePeripheryLeft" value="45"/>
+    <symbol class="handLocators" name="LocLeft" value="55"/>
+    <symbol class="handLocators" name="LocCCenterRight" value="-15"/>
+    <symbol class="handLocators" name="LocCenterRight" value="-25"/>
+    <symbol class="handLocators" name="LocCenterRRight" value="-30"/>
+    <symbol class="handLocators" name="LocPeripheryRight" value="-35"/>
+    <symbol class="handLocators" name="LocExtremePeripheryRight" value="-45"/>
+    <symbol class="handLocators" name="LocRight" value="-54"/>
+
+  <!--handDistances-->
+    <symbol class="handDistances" name="LocContact" value="0.10"/>
+    <symbol class="handDistances" name="LocNear" value="0.20"/>
+    <symbol class="handDistances" name="LocNorm" value="0.25"/>
+    <symbol class="handDistances" name="LocFar" value="0.30"/>
+    <symbol class="handDistances" name="LocFFar" value="0.40"/>
+    <symbol class="handDistances" name="LocStreched" value="0.50"/>
+ 
+  
+  <!--distances-->
+    <symbol class="distances" name="DistShort" value="0.10"/>
+    <symbol class="distances" name="DistNorm" value="0.20"/>
+    <symbol class="distances" name="DistFar" value="0.30"/>
+    <symbol class="distances" name="DistFFar" value="0.40"/>
+ 
+  
+  <!--elementShapes>
+  <symbol name="RightS" value="-2"/>
+  <symbol name="RightC" value="-1"/>
+  <symbol name="LeftC" value="1"/>
+  <symbol name="LeftS" value="2"/>
+</elementShapes>
+
+<elementExtents>
+  <symbol name="Flat" value="0.25"/>
+  <symbol name="Normal" value="0.5"/>
+  <symbol name="Large" value="0.75"/>
+</elementExtents>
+
+<elementRoudness>
+  <symbol name="Sharpe" value="0.9"/>
+  <symbol name="Normal" value="0"/>
+  <symbol name="Broad" value="-0.9"/>
+</elementRoudness>
+
+<elementSkewedness>
+  <symbol name="Round" value="0.9"/>
+  <symbol name="FunnelS" value="0.9"/>
+  <symbol name="FunnelE" value="0.9"/>
+</elementSkewedness-->
+
+  <!-- palmOrientations-->
+    <symbol class="palmOrientations" name="PalmL" value="180.0"/>
+    <symbol class="palmOrientations" name="PalmLU" value="-135.0"/>
+    <symbol class="palmOrientations" name="PalmLD" value="135"/>
+    <symbol class="palmOrientations" name="PalmR" value="0.0"/>
+    <symbol class="palmOrientations" name="PalmRU" value="-45.0"/>
+    <symbol class="palmOrientations" name="PalmRD" value="45.0"/>
+    <symbol class="palmOrientations" name="PalmU" value="-90.0"/>
+    <symbol class="palmOrientations" name="PalmD" value="90"/>
+
+    <symbol class="offset" name="ellipticDistance" value="100"/>
+	
+	
+</symbols>
+
+</hns>

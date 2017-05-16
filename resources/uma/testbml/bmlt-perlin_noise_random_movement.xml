@@ -1,0 +1,9 @@
+<!--
+end time MUST be specified.
+This one works especially well in a head-and-shoulders close-up view
+--><bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+  <bmlt:noise id="noise1" type="perlin" joint="vl5" start="0" end="100">
+    <bmlt:parameter name="basefreqx" value="0.5"/>
+    <bmlt:parameter name="baseamplitudex" value="0.05"/>
+  </bmlt:noise>
+</bml>

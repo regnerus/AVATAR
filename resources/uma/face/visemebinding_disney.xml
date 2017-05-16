@@ -1,0 +1,24 @@
+<VisemeToMorphMapping>
+  <Mapping viseme="0" intensity="0" target="V_SIL"/>
+  <Mapping viseme="1" target="DIS_V_AE_AX_AH"/>
+  <Mapping viseme="2" target="DIS_V_AA"/>
+  <Mapping viseme="3" target="DIS_V_AO"/>
+  <Mapping viseme="4" target="DIS_V_EY_EH_UH"/>
+  <Mapping viseme="5" target="DIS_V_ER"/>
+  <Mapping viseme="6" target="DIS_V_Y_IY_IH_IX"/>
+  <Mapping viseme="7" target="DIS_V_W_UW"/>
+  <Mapping viseme="8" target="DIS_V_OW"/>
+  <Mapping viseme="9" target="DIS_V_AW"/>
+  <Mapping viseme="10" target="DIS_V_OY"/>
+  <Mapping viseme="11" target="DIS_V_AY"/>
+  <Mapping viseme="12" target="DIS_V_H"/>
+  <Mapping viseme="13" target="DIS_V_R"/>
+  <Mapping viseme="14" target="DIS_V_L"/>
+  <Mapping viseme="15" target="DIS_V_S_Z"/>
+  <Mapping viseme="16" target="DIS_V_SH_CH_JH_ZH"/>
+  <Mapping viseme="17" target="DIS_V_TH_DH"/>
+  <Mapping viseme="18" target="DIS_V_F_V"/>
+  <Mapping viseme="19" target="DIS_V_D_T_N"/>
+  <Mapping viseme="20" target="DIS_V_K_G_NG"/>
+  <Mapping viseme="21" target="DIS_V_P_B_M"/>
+</VisemeToMorphMapping>

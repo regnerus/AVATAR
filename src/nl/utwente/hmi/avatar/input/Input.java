@@ -19,8 +19,8 @@ public class Input {
 
     public static void main( String[] args ) throws URISyntaxException {
 
-
-        String language =  args[1];
+        String language =  "EN";
+        language =  args[1];
 
         if(Objects.equals(args[0], "WOZ")) {
 

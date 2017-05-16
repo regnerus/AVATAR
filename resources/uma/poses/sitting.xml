@@ -1,0 +1,36 @@
+<!--
+Moves Armandia with the feet exactly on the ground in a comfortable pose close to the h-anim pose.
+Global y translation: 0.9470096 (def y) + 0.028202161 (hanim correction from pheditor) = 0.975211761
+<SkeletonPose rotationEncoding="axisangles" parts="HumanoidRoot r_hip l_hip r_knee l_knee r_shoulder l_shoulder" encoding="T1R">
+	0 0.9 0 1 0 0 0 1 0 0 -1.57 1 0 0 -1.57 1 0 0 1.57 1 0 0 1.57 0 0 1 -0.20 0 0 1 0.20
+</SkeletonPose>
+-->
+<SkeletonPose rotationEncoding="axisangles" parts="HumanoidRoot r_hip l_hip r_knee l_knee" encoding="T1R">
+    0 0.6 0
+    1 0 0 0
+    1 0 0 -1.57
+    1 0 0 -1.57
+    1 0 0 1.57
+    1 0 0 1.57
+</SkeletonPose>
+
+
+<!--
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+<bmlt:keyframe id="kf1">   
+    <SkeletonInterpolator xmlns="" rotationEncoding="axisangles" parts="HumanoidRoot r_hip l_hip r_knee l_knee" encoding="R">
+        1 0 0 0 1 0 0 -1.57 1 0 0 -1.57 1 0 0 1.57 1 0 0 1.57
+        1 0 0 0.5 1 0 0 -1.57 1 0 0 -1.57 1 0 0 1.57 1 0 0 1.57
+    </SkeletonInterpolator>
+</bmlt:keyframe>
+</bml>
+
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+<bmlt:keyframe id="kf2">   
+    <SkeletonInterpolator xmlns="" rotationEncoding="axisangles" parts="skullbase" encoding="R">
+ 		0 0 1 0 0
+		1 0 1 0 1
+    </SkeletonInterpolator>
+</bmlt:keyframe>
+</bml>
+-->

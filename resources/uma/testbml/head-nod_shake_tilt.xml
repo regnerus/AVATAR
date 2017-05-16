@@ -1,0 +1,10 @@
+<!--
+Example script showing some of the head behaviors available in Elckerlyc.
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1">
+	<head id="nod1" repetition="2" start="1" end="3" lexeme="NOD"/>
+	<head id="shake1" repetition="2" start="4" end="6" lexeme="SHAKE"/>
+	<head id="tilt1" repetition="2" start="7" end="9" lexeme="TILT"/>
+	
+  
+</bml>

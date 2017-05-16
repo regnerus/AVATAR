@@ -1,0 +1,13 @@
+<!--
+Static posture shift
+-->
+<bml id="bml1" xmlns="http://www.bml-initiative.org/bml/bml-1.0">
+	<postureShift id="pose1" start="3">
+		<stance type="STANDING"/>
+		<pose part="ARMS" lexeme="HANGING_ELBOW_FW"/>
+	</postureShift>	
+	<postureShift id="pose2" start="6">
+		<stance type="STANDING"/>
+		<pose part="ARMS" lexeme="HANGING"/>
+	</postureShift>	
+</bml>

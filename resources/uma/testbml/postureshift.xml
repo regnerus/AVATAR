@@ -1,0 +1,14 @@
+<!--
+Pose switch
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:bmlt="http://hmi.ewi.utwente.nl/bmlt">
+	<postureShift id="pose1" start="3">
+		<stance type="STANDING"/>
+		<pose part="ARMS" lexeme="ARMS_FORWARD"/>
+	</postureShift>		
+	
+	<postureShift id="pose2" start="6">
+		<stance type="STANDING"/>
+		<pose part="ARMS" lexeme="ARMS_SPREAD"/>
+	</postureShift>
+</bml>

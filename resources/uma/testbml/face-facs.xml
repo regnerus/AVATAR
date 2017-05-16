@@ -1,0 +1,7 @@
+<!--
+Example script to control the face through FACS Action Units. Only works with one of the avatars that have a MPEG4 controllable face (e.g., the Armandia avatar)
+-->
+<bml xmlns="http://www.bml-initiative.org/bml/bml-1.0"  id="bml1" xmlns:ext="http://www.bml-initiative.org/bml/coreextensions-1.0">
+  <ext:faceFacs id="f1" start="0" end="4"  au="1" side="RIGHT" amount="1"/>
+  <ext:faceFacs id="f2" start="5" end="10"  au="25" side="BOTH" amount="0.5"/>
+</bml>
