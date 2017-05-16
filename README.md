@@ -60,8 +60,6 @@ To run the input, open: `start_input.bat`. A prompt will show up where the langu
 After selecting these options in the prompt the input is running.
 
 ### Dialogue Manager and Behaviour Planner 
-Lorem Ipsum Dolor Sit Amet...
-
 To run the dialogue manager and behaviour planner, open: `start.bat`. A prompt will show up where the language (EN/NL) and dialog manager (QA) can be selected.
 
 After selecting these options in the prompt the dialogue manager and behaviour planner are running.
