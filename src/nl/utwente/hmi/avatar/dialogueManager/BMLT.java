@@ -22,6 +22,9 @@ public class BMLT {
                     " 0.2 0.0 1.0 0.0 0.0\n" +
                     " </FaceInterpolator>\n" +
                     "</bmlt:facekeyframe>\n" +
+                    "<bmlt:text id=\"v1\" start=\"v1:start\" end=\"v1:end\">\n" +
+                    "Yeah..\n" +
+                    "</bmlt:text>\n" +
                     "</bml>";
         }
         else if (bmlBehaviourRequested.equals("UHUH")){
@@ -35,6 +38,9 @@ public class BMLT {
                     " 0.3 0.5 0.0 0.0 0.0\n" +
                     " </FaceInterpolator>\n" +
                     "</bmlt:facekeyframe>\n" +
+                    "<bmlt:text id=\"v1\" start=\"v1:start\" end=\"v1:end\">\n" +
+                    "Uhuh..\n" +
+                    "</bmlt:text>\n" +
                     "</bml>\n";
         }
         else if (bmlBehaviourRequested.equals("OHH")){
@@ -49,6 +55,9 @@ public class BMLT {
                     " 0.25 0.5 0.0 0.0 0.0\n" +
                     " </FaceInterpolator>\n" +
                     "</bmlt:facekeyframe>\n" +
+                    "<bmlt:text id=\"v1\" start=\"v1:start\" end=\"v1:end\">\n" +
+                    "Oh..\n" +
+                    "</bmlt:text>\n" +
                     "</bml>";
         }
         else if (bmlBehaviourRequested.equals("MHMMM")){
@@ -63,6 +72,9 @@ public class BMLT {
                     " 0.25 0.5 0.0 0.0 0.0\n" +
                     " </FaceInterpolator>\n" +
                     "</bmlt:facekeyframe>\n" +
+                    "<bmlt:text id=\"v1\" start=\"v1:start\" end=\"v1:end\">\n" +
+                    "Mhmm..\n" +
+                    "</bmlt:text>\n" +
                     "</bml>\n";
         }
         else if (bmlBehaviourRequested.equals("HMMMM")){
@@ -76,6 +88,9 @@ public class BMLT {
                     " 0.2 0.3 0.0 0.0 0.0\n" +
                     " </FaceInterpolator>\n" +
                     "</bmlt:facekeyframe>\n" +
+                    "<bmlt:text id=\"v1\" start=\"v1:start\" end=\"v1:end\">\n" +
+                    "hm..\n" +
+                    "</bmlt:text>\n" +
                     "</bml>";
         }
         else if (bmlBehaviourRequested.equals("ENDING")){
@@ -114,6 +129,9 @@ public class BMLT {
                     " 5.1 0.0 0.0 0.0 0.0\n" +
                     " </FaceInterpolator>\n" +
                     "</bmlt:facekeyframe>\n" +
+                    "<bmlt:text id=\"v1\" start=\"v1:start\" end=\"v1:end\">\n" +
+                    "Thank you for the information. I think a have a clear view of what happened. Have a nice day!\n" +
+                    "</bmlt:text>\n" +
                     "</bml>\n";
         }
         else if (bmlBehaviourRequested.equals("GREETER")){
@@ -238,6 +256,9 @@ public class BMLT {
                     " 16.3 0.0 0.0 0.0 0.0\n" +
                     " </FaceInterpolator>\n" +
                     "</bmlt:facekeyframe>\n" +
+                    "<bmlt:text id=\"v1\" start=\"v1:start\" end=\"v1:end\">\n" +
+                    "Hi! I understood that you witnessed a crime or an attempted crime. Could you please tell me as much as possible of what you saw from the offenders, victims and other witnesses? Please tell every detail you remember from the moment the video started, even if they seem trivial to you.\n" +
+                    "</bmlt:text>\n" +
                     "</bml>\n";
         }
         return bmlBehaviourOut;
