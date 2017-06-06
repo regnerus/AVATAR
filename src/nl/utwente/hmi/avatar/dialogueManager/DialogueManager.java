@@ -45,7 +45,7 @@ public class DialogueManager extends WebSocketServer implements InputListener {
 
         setupLogger(bmlId);
         connectActiveMQ();
-        connectSpeech();
+        //connectSpeech();
 
     }
 
