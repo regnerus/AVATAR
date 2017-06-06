@@ -113,14 +113,11 @@ public class DialogueManager extends WebSocketServer implements InputListener {
     }
 
     public static void sayThis(String answer, String behaviour, long bmlId) {
-        String prefix = "<bml xmlns=\"http://www.bml-initiative.org/bml/bml-1.0\" id=\"bml"+(++bmlId)+"\" composition=\"REPLACE\"><speech id=\"speech1\" start=\"0\"><text>";
+        String bmlt = BMLT.BMLBehaviour(behaviour, bmlId);
 
-        behaviour = BMLBehaviour.BMLBehaviour(behaviour, bmlId);
+        sendBml(bmlt);
 
-        String suffix = "</text></speech>"+behaviour+"</bml>";
-        sendBml(prefix+answer+suffix);
-
-        LOGGER.info(answer);
+        LOGGER.info(bmlt);
     }
 
     public static void sayThis(String answer, long bmlId) {
